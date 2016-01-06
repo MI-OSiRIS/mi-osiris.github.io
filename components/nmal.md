@@ -5,7 +5,7 @@ header : OSiRIS Hardware Components
 sidebar: components-menu.html
 ---
 {% include JB/setup %}
-The Network Management Abstraction Layer (NMAL) will extend [perfSONAR](www.personar.net)
+The Network Management Abstraction Layer (NMAL) will extend [perfSONAR](http://www.perfsonar.net)
 capabilities to include automated network topology discovery and tracking in the
 Unified Network Information Service (UNIS), and incorporate that into overall operations of the OSiRIS infrastructure.
 
