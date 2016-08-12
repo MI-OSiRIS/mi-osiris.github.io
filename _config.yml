@@ -8,6 +8,7 @@ highlighter: rouge
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
+gems: [jekyll-paginate]
 paginate: 5
 
 # Themes are encouraged to use these universal variables

@@ -10,13 +10,24 @@
 	min-width: 150px; 
 }
 
-.page-header {
-	margin: 0 0 10px;
+h1,h2,h3,h4,h5,h6 {
+  color: grey;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  padding-bottom: 3px;
 }
 
-.page-header h1,h2,h3 {
-	margin-top: 0px;
-	margin-bottom: 0px;
+
+.page-header h1, .page-header h2, .page-header h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+
+
+.page-header {
+  margin: 0 0 10px;
 }
 
 /* bootstrap css bg-info, bg-success, bg-warning, etc */
