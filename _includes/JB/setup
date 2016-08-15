@@ -11,5 +11,9 @@
   {% capture RESOURCE_PATH %}{{ ASSET_PATH }}/resources{% endcapture %}
   {% capture CSS_PATH %}{{ ASSET_PATH }}/css{% endcapture %}
   {% capture IMAGE_PATH %}{{ ASSET_PATH }}/images{% endcapture %}
-   
+  
+  {% if layout.theme.name %}
+  {% capture SQUASH_GITHUB_WARNING %}{{ layout.theme.name }}{% endcapture %}
+  {% endif %}
+  
 {% endcapture %}{% assign jbcache = nil %}

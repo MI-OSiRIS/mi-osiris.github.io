@@ -1,6 +1,6 @@
-{% if site.safe and site.JB.analytics.provider and page.JB.analytics != false %}
+{% if site.safe and site.analytics.provider and page.analytics != false %}
 
-{% case site.JB.analytics.provider %}
+{% case site.analytics.provider %}
 {% when "google" %}
   {% include JB/analytics-providers/google %}
 {% when "googleUA" %}
