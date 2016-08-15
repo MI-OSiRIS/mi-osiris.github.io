@@ -2,7 +2,7 @@
 layout: default
 title : System Tunings
 header : System Tunings for Network and Ceph
-group: navigation
+sidebar: performance-menu.html
 ---
 {% include JB/setup %}
 

@@ -1,13 +1,15 @@
 ---
 layout: default
-title : Ceph Network Latency 
+title: Performance
+header : Ceph Network Latency 
 group: navigation
+sidebar: performance-menu.html
 ---
 {% include JB/setup %}
 
 One of our responsibilies under the NSF CC*DNI DIBBs grant is exploration of the limits of Ceph and our architecture.  Resilience to network latency is a key determinant in how far we can scale geographically.  
 
-Latency was simulated using tc and netem.   More information on netem is here:  https://wiki.linuxfoundation.org/networking/netem
+Latency was simulated using tc and netem.   More information on netem is here:  [https://wiki.linuxfoundation.org/networking/netem](https://wiki.linuxfoundation.org/networking/netem).
 We wrote a small script to quickly change latency on all host interfaces:  [delay-script.sh]({{ASSET_PATH}}/misc/delay-script.sh)
 
 ## Latency during recovery

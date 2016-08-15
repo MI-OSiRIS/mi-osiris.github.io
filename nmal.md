@@ -1,8 +1,8 @@
 ---
 layout: default
-title : OSiRIS NMAL
+title : NMAL
 header : OSiRIS NMAL
-sidebar: components-menu.html
+group: navigation
 ---
 {% include JB/setup %}
 
