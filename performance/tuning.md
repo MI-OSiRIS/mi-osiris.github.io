@@ -17,9 +17,6 @@ fs.file-max = 78718144
 vm.swappiness = 0
 vm.vfs_cache_pressure = 1
 
-# 1% of 384GiB memory on storage blocks
-vm.min_free_kbytes = 4026532
-
 </pre>
 
 ## Network Tuning

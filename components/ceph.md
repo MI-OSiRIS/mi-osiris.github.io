@@ -18,7 +18,7 @@ All of our components are deployed and managed with a puppet module forked from 
 
 #### Ceph Metrics 
 
-To gather Ceph metrics we use Collectd with a plugin that reads from the daemon admin sockets.  Collectd feeds into Influxdb which supports intaking Collectd UDP data directly.  We also gather system stats such as CPU, Iotime, memory, threads, etc.
+To gather Ceph metrics we use Collectd with a plugin that reads from the daemon admin sockets.  Collectd feeds into Influxdb which supports intaking Collectd UDP data directly.  We also gather system stats such as CPU, Iotime, memory, threads, etc.  For an overview of this toolchain please have a look at our [monitoring and logging overview](/components/monitoring.html)
 
 We can then visualize this data with Grafana.  For example, here are two simple dashboards showing OSD operation latency and operations per second.
 
