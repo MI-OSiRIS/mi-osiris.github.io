@@ -22,10 +22,10 @@ To gather Ceph metrics we use Collectd with a plugin that reads from the daemon 
 
 We can then visualize this data with Grafana.  For example, here are two simple dashboards showing OSD operation latency and operations per second.
 
-##### OSD Operations per second
+##### OSD Operation latency
 [![OSD Operations per second]({{IMAGE_PATH}}/grafana/Collectd-Grafana-Ceph-osd-op-latency.png){: style="width: 800px"}]({{IMAGE_PATH}}/grafana/Collectd-Grafana-Ceph-osd-op-latency.png)
 
-##### OSD Operation latency
+##### OSD Operations per second
 [![OSD Operations Latency]({{IMAGE_PATH}}/grafana/Collectd-Grafana-Ceph-osd-op.png){: style="width: 800px"}]({{IMAGE_PATH}}/grafana/Collectd-Grafana-Ceph-osd-op.png)
 
 
