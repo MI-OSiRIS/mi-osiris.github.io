@@ -3,21 +3,40 @@
 }
 
 .sb img {
-	padding: 5px;
+  padding: 5px;
 }
 
 .sb {
-	min-width: 150px; 
+  min-width: 150px; 
 }
 
 h1,h2,h3,h4,h5,h6 {
   color: grey;
   border-bottom: 1px solid #eee;
   margin-bottom: 8px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-bottom: 3px;
 }
 
+.lf {
+  float: left;
+  padding-right: 5px;
+}
+
+.rf {
+  float: right;
+  padding-left: 5px;
+}
+
+/*
+.col-md-9 img  {
+  padding: 2px;
+}
+*/
+
+.well h4 {
+  margin: 0px;
+}
 
 .page-header h1, .page-header h2, .page-header h3 {
   margin-top: 0px;
@@ -32,11 +51,11 @@ h1,h2,h3,h4,h5,h6 {
 
 /* bootstrap css bg-info, bg-success, bg-warning, etc */
 div[class*=-info] {
-	border-radius: 3px;
-	padding: 3px;
-	border: 1px solid grey;
-	margin-top: 3px;
-	margin-bottom: 3px;
+  border-radius: 3px;
+  padding: 3px;
+  border: 1px solid grey;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 /* Jekyll-Bootstrap styles */

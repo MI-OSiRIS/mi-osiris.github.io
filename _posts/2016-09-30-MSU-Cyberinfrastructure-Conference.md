@@ -1,8 +1,7 @@
 ---
 layout: post
 category : article
-tagline: "OSiRIS Presentation at 2016 MSU Cyberinfrastructure Forum"
-tags : [msu, presentations]
+tags : [msu, presentations, conferences]
 ---
 {% include JB/setup %}
 

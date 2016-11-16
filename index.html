@@ -20,23 +20,13 @@ By providing a single data infrastructure that supports computational access on 
     <div class="well">
         <h4><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h4>
         <!-- <div class="content"> -->
-            {{ post.content }}
+            {{ post.excerpt }}
         <!-- </div> -->
     </div>
 <!-- </div> -->
 {% endfor %}
 
 <ul class="pagination">
-  {% if page.previous %}
-    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-  {% else %}
-    <li class="prev disabled"><a>&larr; Previous</a></li>
-  {% endif %}
     <li><a href="{{ BASE_PATH }}{{ site.archive_path }}">Archive</a></li>
-  {% if page.next %}
-    <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-  {% else %}
-    <li class="next disabled"><a>Next &rarr;</a>
-  {% endif %}
 </ul>
 

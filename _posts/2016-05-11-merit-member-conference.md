@@ -1,8 +1,7 @@
 ---
 layout: post
 category : article
-tagline: "OSiRIS Presentation at 2016 Merit Member Conference"
-tags : [merit, presentations]
+tags : [merit, presentations, conferences]
 ---
 {% include JB/setup %}
 

@@ -42,6 +42,7 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 | Charlie Miller | | | | MSU Engineer | 
 | Charles Antonelli | | | | UM Senior Staff |
 | Lillian Huang | | | | UM Student Engineer |
+| Jerome Kinlaw | | | | UM Engineer | 
 | Dan Kirkland | | | | UM Network Engineer | 
 | Benjeman Meekhof | | | | UM Lead Engineer |
 | Michael Gregorowicz | | | | WSU Systems Architect |

@@ -1,8 +1,7 @@
 ---
 layout: post
 category : article
-tagline: "OSiRIS Presentation at 2016 OSG All Hands meeting"
-tags : [osg, presentations]
+tags : [osg, presentations, conferences]
 ---
 {% include JB/setup %}
 
