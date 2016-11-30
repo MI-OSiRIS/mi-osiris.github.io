@@ -4,8 +4,10 @@ category : article
 tags : [ sc16, supercomputing, conferences ]
 ---
 {% include JB/setup %}
-
-[![OSiRIS Equipment at SC]({{IMAGE_PATH}}/sc16/BoothCrates-UM.jpg){: style="width: 240px" class="rf"}]({{IMAGE_PATH}}/sc16/BoothCrates-UM.jpg)
+<div class="rf imgwrap" style="width:240px">
+<a href="{{IMAGE_PATH}}/sc16/BoothCrates-UM.jpg"><img style="width: 240px"  src="{{IMAGE_PATH}}/sc16/BoothCrates-UM.jpg" alt="OSiRIS Equipment at SC"></a>
+<a href="{{IMAGE_PATH}}/sc16/Osiris-sign-1.pdf">sign text</a>
+</div>
 
 <a href="http://sc16.supercomputing.org"><img src="{{IMAGE_PATH}}/sc16/SC16.4CBlackRedTextOutline.png" alt="SC16 Logo" class="lf" style="width: 340px"></a>
 
@@ -20,7 +22,10 @@ For the week of the conference, November 14 - 18, OSiRIS deployed our '4th site'
 <br clear='all' />
 <!--excerpt-->
 
-[![OSiRIS Equipment at SC]({{IMAGE_PATH}}/sc16/BoothCrates-MSU.jpg){: style="width: 240px" class="rf"}]({{IMAGE_PATH}}/sc16/BoothCrates-MSU.jpg)
+<div class="rf imgwrap" style="width:240px">
+<a href="{{IMAGE_PATH}}/sc16/BoothCrates-MSU.jpg"><img style="width: 240px" src="{{IMAGE_PATH}}/sc16/BoothCrates-MSU.jpg"></a>
+<a href="{{IMAGE_PATH}}/sc16/Osiris-sign-2.pdf">sign text</a>
+</div>
 
 We went to Supercomputing with these goals in mind:
 
