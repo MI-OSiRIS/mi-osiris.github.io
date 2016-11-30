@@ -42,13 +42,12 @@ We went to Supercomputing with these goals in mind:
 
 At the 'CEPH in HPC Environments' BOF we were invited to give a brief overview of the project.  Slides from that talk are available here on <a href="{{ASSET_PATH}}/slides/SC16-Ceph-BOF.pdf">our website</a> as well as posted here on the <a href="https://www.msi.umn.edu/sc16Ceph">BOF overview</a>.  You may also be interested in talks from <a href="https://www.msi.umn.edu/sc15Ceph">last year's BOF</a> though OSiRIS did not yet exist to attend.  
 
-To cap off the conference we participated in breaking the SCinet record for most data transferred via the SC16 network links (<a href="http://sc16.supercomputing.org/2016/11/18/sc16-scinet-set-new-1-2-terabyte-record">article on SC16 site</a>)
-{% comment %} article in progress  (<a href="{% post_url 2016-11-17-Breaking-Data-Transfer-Records-At-SC16 %}">article</a>) {% endcomment %}
+To cap off the conference we participated in breaking the SCinet record for most data transferred via the SC16 network links (<a href="{% post_url 2016-11-17-Breaking-Data-Transfer-Records-At-SC16 %}">article</a>) 
 
 <hr> 
 
 <img src="{{IMAGE_PATH}}/sc16/its-signature-vertical.png" alt="UM ITS Logo" class="lf" style="width:150px">
-None of this would have been possible without the support of Dan Kirkland and Dan Eklund from the UM ITS team.  Their hard work before and during the conference made sure we had stable, fast network paths to the conference and on the showroom floor.    
+We appreciate the support of Dan Kirkland and Dan Eklund from the UM ITS team.  Their hard work before and during the conference made sure we had stable, fast network paths to the conference and on the showroom floor.    
 
 <br clear='left' />
 
