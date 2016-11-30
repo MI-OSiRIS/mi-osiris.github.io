@@ -2,6 +2,8 @@
 layout: post
 category : article
 title: "OSiRIS At Supercomputing 2016"
+redirect_from: 
+ - /article/2016/11/18/OSiRIS-At-Supercomputing-2016
 tags : [ sc16, supercomputing, conferences ]
 ---
 {% include JB/setup %}

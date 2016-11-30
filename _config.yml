@@ -8,7 +8,7 @@ highlighter: rouge
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
-gems: [jekyll-paginate]
+gems: [ jekyll-paginate, jekyll-redirect-from]
 paginate: 5
 
 excerpt_separator: <!--excerpt-->
