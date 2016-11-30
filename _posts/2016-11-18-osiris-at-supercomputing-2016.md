@@ -32,18 +32,18 @@ We went to Supercomputing with these goals in mind:
 
 * Demonstrate our ability to quickly deploy additional OSiRIS sites.  At our booth we presented a talk including a live demonstration of spinning up a new storage block (<a href="{{ASSET_PATH}}/slides/SC16-Booth-Talk.pdf">download slides</a>).
 
-{% comment %} article in progress (<a href="{% ds_post_url 2016-11-15-Provisioning-OSiRIS-At-SC16 %}">article</a>).  {% endcomment %}
+{% comment %} article in progress (<a href="{% ds_post_url 2016-11-15-provisioning-osiris-at-sc16 %}">article</a>).  {% endcomment %}
 
 * Demonstrate and test the usability of OSiRIS with a higher latency site involved.
 
 * Test and gather data on using Ceph cache tiers to help overcome latency issues.  This test features LIQID NVMe drives installed in a pair of 100Gb capable hosts in our rack at SC. 
-{% comment %} (<a href="{% post_url 2016-11-16-Ceph-Cache-Tiering-With-LIQID-NVMe-At-SC16 %}">article</a>). {% endcomment %}
+{% comment %} (<a href="{% post_url 2016-11-16-ceph-cache-tiering-with-liqid-nvme-at-sc16 %}">article</a>). {% endcomment %}
 * Demonstrate live data movement with the Data Logistics Toolkit created at Indiana University.  This demo showcased the movement of USGS earthsat data from capture to storage not only in the main OSiRIS Ceph cluster but also a dynamic OSiRIS Ceph cluster deployment built at Cloudlab.
-{% comment %}  (<a href="{% post_url 2016-11-16-Moving-USGS-Data-With-DLT-And-OSiRIS-At-SC16 %}">article</a>). {% endcomment %}
+{% comment %}  (<a href="{% post_url 2016-11-16-moving-usgs-data-with-dlt-and-osiris-at-sc16 %}">article</a>). {% endcomment %}
 
 At the 'CEPH in HPC Environments' BOF we were invited to give a brief overview of the project.  Slides from that talk are available here on <a href="{{ASSET_PATH}}/slides/SC16-Ceph-BOF.pdf">our website</a> as well as posted here on the <a href="https://www.msi.umn.edu/sc16Ceph">BOF overview</a>.  You may also be interested in talks from <a href="https://www.msi.umn.edu/sc15Ceph">last year's BOF</a> though OSiRIS did not yet exist to attend.  
 
-To cap off the conference we participated in breaking the SCinet record for most data transferred via the SC16 network links (<a href="{% post_url 2016-11-17-Breaking-Data-Transfer-Records-At-SC16 %}">article</a>) 
+To cap off the conference we participated in breaking the SCinet record for most data transferred via the SC16 network links (<a href="{% post_url 2016-11-17-breaking-data-transfer-records-at-sc16 %}">article</a>) 
 
 <hr> 
 
