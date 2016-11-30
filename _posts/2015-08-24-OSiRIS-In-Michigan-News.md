@@ -1,6 +1,7 @@
 ---
 layout: post
 category : article
+title: "OSiRIS in Michigan News"
 tagline: "Big data: $5M to widen 'bottleneck to discovery'"
 tags : [um, big data, scientific discovery ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 category : article
+title: "MSU Cyberinfrastructure Conference"
 tags : [msu, presentations, conferences]
 ---
 {% include JB/setup %}

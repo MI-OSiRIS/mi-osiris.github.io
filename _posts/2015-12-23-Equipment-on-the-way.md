@@ -1,6 +1,7 @@
 ---
 layout: post
 category : hardware
+title: "Equipment on the Way"
 tagline: "Vendor Selection Complete"
 tags : [ hardware, dell, components ]
 ---

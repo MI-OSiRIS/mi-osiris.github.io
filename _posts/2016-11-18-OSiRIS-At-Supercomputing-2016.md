@@ -1,6 +1,7 @@
 ---
 layout: post
 category : article
+title: "OSiRIS At Supercomputing 2016"
 tags : [ sc16, supercomputing, conferences ]
 ---
 {% include JB/setup %}
