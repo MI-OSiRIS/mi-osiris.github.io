@@ -20,28 +20,33 @@ tags : [ sc16, supercomputing, conferences ]
 
 The OSiRIS project was featured in the University of Michigan Advanced Research Computing booth at Supercomputing in Salt Lake City this year.  
 
-For the week of the conference, November 14 - 18, OSiRIS deployed our '4th site' in Salt Lake City at the Salt Palace convention center.
+For the week of the conference, November 14 - 18, OSiRIS deployed a 4th storage site in Salt Lake City at the Salt Palace convention center.
 
 <br clear='all' />
+
 <!--excerpt-->
 
-<div class="rf imgwrap" style="width:240px">
+
+<div class="imgwrap" style="width:850px; margin-bottom: 20px; margin-top: 20px;" >
+<a href="{{IMAGE_PATH}}/sc16/SC16SiteMap.png"><img src="{{IMAGE_PATH}}/sc16/SC16SiteMap.png" alt="OSiRIS Sites during SC16" style="width: 850px"></a>
+</div>
+
+
+<div class="lf imgwrap" style="width:240px">
 <a href="{{IMAGE_PATH}}/sc16/BoothCrates-MSU.jpg"><img style="width: 240px" src="{{IMAGE_PATH}}/sc16/BoothCrates-MSU.jpg"></a>
 <a href="{{IMAGE_PATH}}/sc16/Osiris-sign-2.pdf">sign text</a>
 </div>
 
 We went to Supercomputing with these goals in mind:
 
-* Demonstrate our ability to quickly deploy additional OSiRIS sites.  At our booth we presented a talk including a live demonstration of spinning up a new storage block (<a href="{{ASSET_PATH}}/slides/SC16-Booth-Talk.pdf">download slides</a>).
+* Demonstrate our ability to quickly deploy additional OSiRIS sites.  At our booth we presented a talk including a live demonstration of spinning up a new storage block (<a href="{% post_url 2016-11-15-provisioning-osiris-at-sc16 %}">article</a> and <a href="{{ASSET_PATH}}/slides/SC16-Booth-Talk.pdf">slides</a>).
 
-{% comment %} article in progress (<a href="{% ds_post_url 2016-11-15-provisioning-osiris-at-sc16 %}">article</a>).  {% endcomment %}
-
-* Demonstrate and test the usability of OSiRIS with a higher latency site involved.
+* Demonstrate and test the usability of OSiRIS with a higher latency site involved (confirming our <a href="/performance/latency">formal test results</a>).
 
 * Test and gather data on using Ceph cache tiers to help overcome latency issues.  This test features LIQID NVMe drives installed in a pair of 100Gb capable hosts in our rack at SC. 
 {% comment %} (<a href="{% post_url 2016-11-16-ceph-cache-tiering-with-liqid-nvme-at-sc16 %}">article</a>). {% endcomment %}
-* Demonstrate live data movement with the Data Logistics Toolkit created at Indiana University.  This demo showcased the movement of USGS earthsat data from capture to storage not only in the main OSiRIS Ceph cluster but also a dynamic OSiRIS Ceph cluster deployment built at Cloudlab.
-{% comment %}  (<a href="{% post_url 2016-11-16-moving-usgs-data-with-dlt-and-osiris-at-sc16 %}">article</a>). {% endcomment %}
+
+* Demonstrate live data movement with the Data Logistics Toolkit created at Indiana University.  This demo showcased the movement of USGS earthsat data from capture to storage not only in the main OSiRIS Ceph cluster but also a dynamic OSiRIS Ceph cluster deployment built at Cloudlab (<a href="{% post_url 2016-11-16-moving-usgs-data-with-dlt-and-osiris-at-sc16 %}">article</a>). 
 
 At the 'CEPH in HPC Environments' BOF we were invited to give a brief overview of the project.  Slides from that talk are available here on <a href="{{ASSET_PATH}}/slides/SC16-Ceph-BOF.pdf">our website</a> as well as posted here on the <a href="https://www.msi.umn.edu/sc16Ceph">BOF overview</a>.  You may also be interested in talks from <a href="https://www.msi.umn.edu/sc15Ceph">last year's BOF</a> though OSiRIS did not yet exist to attend.  
 
