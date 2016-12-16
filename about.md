@@ -15,7 +15,7 @@ The [Michigan News](http://ns.umich.edu/new/releases/23151-big-data-5m-to-widen-
 <br />
   
   
-[![ARC-TS Logo]({{IMAGE_PATH}}/logos/arcts_signature_vertical.png){: style="width: 150px; float: left; margin-right: 20px"}](http://arc-ts.umich.edu/systems-and-services/osiris/)
+[![ARC-TS Logo]({{IMAGE_PATH}}/logos/arcts_signature_vertical.png){: style="width: 30%; float: left; margin-right: 20px"}](http://arc-ts.umich.edu/systems-and-services/osiris/)
 OSiRIS project engineering is coordinated by University Of Michigan Advanced Research Computing - Technology Services ([ARC-TS](http://arc-ts.umich.edu/systems-and-services/osiris/)).    
 
 The Principal Investigator is Shawn McKee, Research Scientist in the Department of Physics and the Director of the Center for Network and Storage-Enabled Collaborative Computational Science ([CNSECCS](http://micde.umich.edu/centers/cnseccs/)). CNSECCS and OSiRIS are operated under the auspices of the Michigan Institute for Computational Discovery and Engineering ([MICDE](http://micde.umich.edu/osiris)).

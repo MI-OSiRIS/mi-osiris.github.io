@@ -26,13 +26,13 @@ Periscope comprises a set of extensions to the standard perfSonar distribution a
 BLiPP agents may reside in both the end hosts (monitoring end-to-end network status) and dedicated diagnose hosts inside networks. 
 The latter deployment can help isolate section failures of networks.
 
-[![BLiPP Deployment]({{IMAGE_PATH}}/nmal/NMAL-Blipp-Deployment.png)]({{IMAGE_PATH}}/nmal/NMAL-Blipp-Deployment.png)
+<a href="{{IMAGE_PATH}}/nmal/NMAL-Blipp-Deployment.png"><img src="{{IMAGE_PATH}}/nmal/NMAL-Blipp-Deployment.png" alt="BLiPP Deployment" style="width: 70%"></a>
 
 #### UNIS
 
 The Periscope UNIS data store exposes a RESTful interface for information necessary to perform data logistics.  The data store can hold measurements from BLiPP or network topology inferred through various agents.
 
-[![UNIS Topology and Measurement Store]({{IMAGE_PATH}}/nmal/NMAL-Unis.png)]({{IMAGE_PATH}}/nmal/NMAL-Unis.png)
+<a href="{{IMAGE_PATH}}/nmal/NMAL-Unis.png"><img src="{{IMAGE_PATH}}/nmal/NMAL-Unis.png" alt="UNIS Topology and Measurement Store" style="width: 70%"></a>
 
 ### AAA 
 
@@ -44,12 +44,12 @@ These signed keys can be used by other applications like blipp, ibp-server and c
 * UNIS assigns attributes to each principal which in our case is dlt-web and any other trusted principals which are then used to delegate attributes to other users. 
 * ABAC is then used in UNIS to decipher appropriate attributes from certificates and provide appropriate authorization to the application.
 
-[![UNIS Topology and Measurement Store]({{IMAGE_PATH}}/nmal/NMAL-AAA.png)]({{IMAGE_PATH}}/nmal/NMAL-AAA.png)
+<a href="{{IMAGE_PATH}}/nmal/NMAL-AAA.png"><img src="{{IMAGE_PATH}}/nmal/NMAL-AAA.png" alt="NMAL AAA Components" style="width: 70%"></a>
 
 ### SDN
 
 The larger picture of our SDN infrastructure is still in the planning stages.  Regardless we have started our deployment efforts with an eye towards enabling advanced control of network flows by configuring host networking with Openvswitch.  Below is a diagram of our typical configuration.  This is very likely to evolve over time.  
 
-<img src="{{IMAGE_PATH}}/HostOvsBlock.png" alt="Openvswitch Host configuration">
+<a href="{{IMAGE_PATH}}/HostOvsBlock.png"><img src="{{IMAGE_PATH}}/HostOvsBlock.png" alt="Openvswitch Host configuration" style="width:90%"></a>
 
 Under discussion is the use of OpenDaylight or RYU as our SDN controller integrating with NMAL.

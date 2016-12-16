@@ -5,7 +5,7 @@ header : OSiRIS Hardware Components
 sidebar: components-menu.html
 ---
 {% include JB/setup %}
-[![Hardware Overview]({{IMAGE_PATH}}/MI-OSiRIS-CephStorage.png){: style="width: 800px"}]({{IMAGE_PATH}}/MI-OSiRIS-CephStorage.png)
+[![Hardware Overview]({{IMAGE_PATH}}/MI-OSiRIS-CephStorage.png){: style="width: 100%"}]({{IMAGE_PATH}}/MI-OSiRIS-CephStorage.png)
 <br />
 
 ## Hardware Provisioning

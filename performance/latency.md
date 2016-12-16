@@ -18,13 +18,13 @@ We experimented with increasing the latency to a single storage block hosting 71
 In steps the induced latency on um-stor01 was increased to a max of 160ms ingress/egress, 320ms round trip (in addition to normal latency of a few ms). 
 
 ### Rados Bench Write
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench write.png){: style="width: 800px"}]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench write.png)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench write.png){: style="width: 100%"}]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench write.png)
 
 <br />
 
 
 ### Rados Bench Read Random
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench read random.png){: style="width: 800px"}]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench read random.png)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench read random.png){: style="width: 100%"}]({{IMAGE_PATH}}/latency/OSD Latency - 320ms RTT - rados bench read random.png)
 
 ## OSD Network Latency during recovery
 
@@ -36,11 +36,11 @@ wsu-stor01 and um-stor01 both have 60 OSD.
 
 ### Latency increasing
 
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png){: style="width: 800px"}]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png){: style="width: 100%"}]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png)
 
 ### Latency decreasing
 
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png){: style="width: 800px"}]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png){: style="width: 100%"}]({{IMAGE_PATH}}/latency/OSD Latency During Recovery - detail up to 320ms RT ascending.png)
 
 ## Latency to client
 
@@ -50,21 +50,21 @@ There was nothing surprising here.  Read and write speeds steadily decrease with
 
 #### Cluster Dashboard
 
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Write Increasing Latency.jpg){: style="width: 800px"}]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Write Increasing Latency.jpg)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Write Increasing Latency.jpg){: style="width: 100%"}]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Write Increasing Latency.jpg)
 
 #### Client Network IO
 
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Write Increasing Latency.jpg){: style="width: 800px"}]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Write Increasing Latency.jpg)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Write Increasing Latency.jpg){: style="width: 100%"}]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Write Increasing Latency.jpg)
 
 ### Rados bench random read test
 
 #### Cluster Dashboard
 
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Rand Read Increasing Client Latency.jpg){: style="width: 800px"}]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Rand Read Increasing Client Latency.png)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Rand Read Increasing Client Latency.jpg){: style="width: 100%"}]({{IMAGE_PATH}}/latency/Cluster Dash - Rados Bench Rand Read Increasing Client Latency.png)
 
 #### Client Network IO
 
-[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Rand Read Increasing Latency.jpg){: style="width: 800px"}]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Rand Read Increasing Latency.png)
+[![OSD Increasing Latency During Recovery]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Rand Read Increasing Latency.jpg){: style="width: 100%"}]({{IMAGE_PATH}}/latency/Client NetIO - Rados Bench Rand Read Increasing Latency.png)
 
 
 ## Latency to monitors

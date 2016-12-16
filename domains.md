@@ -15,7 +15,7 @@ ATLAS compute jobs will use the OSiRIS Ceph S3 gateway to read/write single even
 
 Below is a plot of our S3 gateway statistics during a run of ATLAS event test code.
 
-[![Cluster Dashboard]({{IMAGE_PATH}}/ATLAS-Test-RGW-Dash.png){: style="width: 800px"}]({{IMAGE_PATH}}/ATLAS-Test-RGW-Dash.png)
+[![Cluster Dashboard]({{IMAGE_PATH}}/ATLAS-Test-RGW-Dash.png){: style="width: 100%"}]({{IMAGE_PATH}}/ATLAS-Test-RGW-Dash.png)
 
 ### Oceanic Modeling
 

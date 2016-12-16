@@ -10,6 +10,12 @@
   min-width: 150px; 
 }
 
+/*
+.sb img {
+  width: 100%;
+}
+*/
+
 h1,h2,h3,h4,h5,h6 {
   color: grey;
   border-bottom: 1px solid #eee;
@@ -22,7 +28,7 @@ h1 small {
   color: skyblue;
 }
 
-ul { overflow: hidden; }
+ul { overflow: auto; }
 
 .lf {
   float: left;
