@@ -54,6 +54,8 @@ To cap off the conference we participated in breaking the SCinet record for most
 
 <hr> 
 
+Thanks to everyone on the OSiRIS team at University of Michigan, Wayne State University, Indiana University, and Michigan State University for making the conference a great success!
+
 <img src="{{IMAGE_PATH}}/sc16/its-signature-vertical.png" alt="UM ITS Logo" class="lf" style="width:20%">
 We appreciate the support of Dan Kirkland and Dan Eklund from the UM ITS team.  Their hard work before and during the conference made sure we had stable, fast network paths to the conference and on the showroom floor.    
 
@@ -72,8 +74,7 @@ Thanks to Juniper and Adva for providing network equipment.
 <a href="http://www.advaoptical.com"><img style="width: 30%" src="{{IMAGE_PATH}}/sc16/ADVA_Optical_Networking.svg.png" alt="ADVA Logo"></a>
 
 We would also like to acknowledge the hard-working team that built the <a href="http://sc16.supercomputing.org/scinet/">SCinet infrastructure</a> to support local and wide-area networks at the conference.  
-
- 
+  
 
 
 

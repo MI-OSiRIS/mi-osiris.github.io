@@ -58,3 +58,8 @@ Overall we consider the deployment at SC16 to be a success.  As expected the ove
 <div class="imgwrap" style="width:100%">
 <a href="{{IMAGE_PATH}}/sc16/Grafana-SCTalk-11-15-AddOsd.png"><img src="{{IMAGE_PATH}}/sc16/Grafana-SCTalk-11-15-AddOsd.png" alt="Adding OSD during SC booth talk" class="" style="width: 100%"></a>
 </div>
+
+<hr>
+Thanks to Ben Meekhof and Shawn McKee from the OSiRIS team at UM for system preparation and work on the provisioning demonstration.
+
+Thanks to Bob Ball, Victor Yang, and Anthony Orians from UM Physics/AGLT2 for assistance with equipment preparation before and after the conference. 

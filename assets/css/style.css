@@ -40,6 +40,7 @@ ul { overflow: auto; }
   font-size: 0.8em;
   font-style: italic;
   font-weight: bold;
+  color: grey;
 }
 
 .well h4 {
@@ -102,7 +103,6 @@ div[class*=-info] {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
-
 
  #sb_um {
       width: 70px;

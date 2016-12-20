@@ -45,3 +45,6 @@ The Supercomputing network infrastructure provided a valuable testbed to further
 * Periscope – Measurement collection/analysis framework.
 
 More information on DLT and EODN may be found at <a href="http://data-logistics.org">data-logistics.org</a>
+
+<hr>
+Thanks to Ezra Kissel, Jayashree Ajay Candadai, Jeremy Musser, and the rest of the OSiRIS team at IU for orchestrating this demo and capturing visualizations.  
