@@ -43,8 +43,8 @@ Demonstrate our ability to quickly deploy additional OSiRIS sites.  At our booth
 
 Demonstrate and test the usability of OSiRIS with a higher latency site involved (confirming our <a href="/performance/latency">formal test results</a>).
 
-Test and gather data on using Ceph cache tiers to help overcome latency issues.  This test features LIQID NVMe drives installed in a pair of 100Gb capable hosts in our rack at SC. 
-{% comment %} (<a href="{% post_url 2016-11-16-ceph-cache-tiering-with-liqid-nvme-at-sc16 %}">article</a>). {% endcomment %}
+Test and gather data on using Ceph cache tiers to help overcome latency issues.  This test features LIQID NVMe drives installed in a pair of 100Gb capable hosts from 2CRSI in our rack at SC 
+(<a href="{% post_url 2016-11-16-ceph-cache-tiering-with-liqid-nvme-at-sc16 %}">article</a>).
 
 Demonstrate live data movement with the Data Logistics Toolkit created at Indiana University.  This demo showcased the movement of USGS earthsat data from capture to storage not only in the main OSiRIS Ceph cluster but also a dynamic OSiRIS Ceph cluster deployment built at Cloudlab (<a href="{% post_url 2016-11-16-moving-usgs-data-with-dlt-and-osiris-at-sc16 %}">article</a>). 
 
