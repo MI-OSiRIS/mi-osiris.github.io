@@ -7,7 +7,7 @@ sidebar: components-menu.html
 ---
 {% include JB/setup %}
 #### Logical Overview
-<a href="{{IMAGE_PATH}}/osiris-overview.png"><img src="{{IMAGE_PATH}}/osiris-overview.png" alt="OSiRIS Overview" style="width: 100%"></a>
+<a href="{{IMAGE_PATH}}/MI-OSiRIS-Logical-view.png"><img src="{{IMAGE_PATH}}/MI-OSiRIS-Logical-view.png" alt="OSiRIS Overview" style="width: 100%"></a>
 
 **Main Attributes of OSiRIS**
 
