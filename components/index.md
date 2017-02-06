@@ -21,4 +21,4 @@ sidebar: components-menu.html
 * Enables cloud infrastructures, e.g., OpenStack
 * Collaborative storage for researchers/resources outside of our campuses
 * Connected to the Internet at 10 to 100 Gbps
-* Uses Globus Connect(Alliance, 2014) GridFTP-based Data Transfer Nodes (each at 4x10Gbps) for wide-area data transfer
+* Uses Globus Connect GridFTP-based Data Transfer Nodes (each at 2 x 25Gbps minimum) for wide-area data transfer
