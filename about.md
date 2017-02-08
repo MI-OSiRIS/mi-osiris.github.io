@@ -12,12 +12,12 @@ OSiRIS will provide a distributed, multi-institutional storage infrastructure th
 <br />
   
   
-[![ARC-TS Logo]({{IMAGE_PATH}}/logos/arcts_signature_vertical.png){: style="width: 30%; float: left; margin-right: 20px"}](http://arc-ts.umich.edu/systems-and-services/osiris/)
+<a href="http://arc-ts.umich.edu/systems-and-services/osiris/"><img src="{{IMAGE_PATH}}/logos/arcts_signature_vertical.png" style="width: 25%; float: left; margin-right: 20px"></a>
 OSiRIS project engineering is coordinated by University Of Michigan Advanced Research Computing - Technology Services ([ARC-TS](http://arc-ts.umich.edu/systems-and-services/osiris/)).    
 
 The Principal Investigator is Shawn McKee, Research Scientist in the Department of Physics and the Director of the Center for Network and Storage-Enabled Collaborative Computational Science ([CNSECCS](http://micde.umich.edu/centers/cnseccs/)). CNSECCS and OSiRIS are operated under the auspices of the Michigan Institute for Computational Discovery and Engineering ([MICDE](http://micde.umich.edu/osiris)).
 
-<br />
+<br style="clear: both"/>
 
 **OSiRIS PIs**
 
