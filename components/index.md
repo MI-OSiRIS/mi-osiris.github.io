@@ -3,6 +3,7 @@ layout: default
 title : Components
 tagline : Technology Components in OSiRIS
 group: navigation
+order: 4
 sidebar: components-menu.html
 ---
 {% include JB/setup %}

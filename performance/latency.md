@@ -3,6 +3,7 @@ layout: default
 title: Performance
 header : Ceph Network Latency 
 group: navigation
+order: 6
 sidebar: performance-menu.html
 ---
 {% include JB/setup %}

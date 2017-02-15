@@ -3,6 +3,7 @@ layout: default
 title : Science Domains
 header : Science Domains
 group: navigation
+order: 3
 ---
 {% include JB/setup %}
 

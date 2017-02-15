@@ -3,6 +3,7 @@ layout: default
 title: Publications
 tagline: OSiRIS presentations, papers, and articles
 group: navigation
+order: 2
 ---
 {% include JB/setup %}
 

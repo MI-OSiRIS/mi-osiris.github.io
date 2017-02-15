@@ -3,6 +3,7 @@ layout: default
 title : NMAL
 header : OSiRIS NMAL
 group: navigation
+order: 5
 ---
 {% include JB/setup %}
 

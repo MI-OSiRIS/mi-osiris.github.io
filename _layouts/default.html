@@ -52,10 +52,9 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
+            {% assign pages_list = site.pages | sort:"order" %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
-            
           </ul>
           <p class="navbar-text navbar-right"><a href="https://github.com/MI-OSiRIS">GitHub</a></p>
         </div>

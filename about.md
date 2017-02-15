@@ -3,6 +3,7 @@ layout: default
 title : About OSiRIS
 header : OSiRIS Overview
 group: navigation
+order: 1
 ---
 {% include JB/setup %}
 OSiRIS (Open Storage Research Infrastructure) is a NSF CC*DNI DIBBs grant awarded to the University of Michigan, Michigan State, Wayne State and Indiana University. [Award Details](https://nsf.gov/awardsearch/showAward?AWD_ID=1541335&HistoricalAwards=false) are publicly available on the NSF website.  
