@@ -33,12 +33,10 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 | Joseph Cottam | | | | IU Research Scientist |
 | Ezra Kissel | | | | IU Lead Research Scientist |
 | Jeremy Musser | | | | IU Student Engineer |
-| Miao Zhang | | | | IU Student Engineer |
 | Jeff Goeke-Smith | | | | MSU Network Engineer | 
 | Andy Keen | | | | MSU Lead Engineer | 
 | Charlie Miller | | | | MSU Engineer | 
-| Charles Antonelli | | | | UM Senior Staff |
-| Lillian Huang | | | | UM Student Engineer |
+| Lillian Huang | | | | UM Student Engineer (Summer 2016) |
 | Jerome Kinlaw | | | | UM Engineer | 
 | Dan Kirkland | | | | UM Network Engineer | 
 | Benjeman Meekhof | | | | UM Lead Engineer |
@@ -55,6 +53,8 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 <a href="https://dibbs17.org/report/Posters/1541335poster.PDF">Our poster</a> and <a href="https://dibbs17.org/report/Papers/1541335paper.PDF">whitepaper</a> from the <a href="https://dibbs17.org">DIBBS17</a> conference in Arlington, VA. 
 
 <a href="{{ASSET_PATH}}/slides/SC16-Booth-Talk.pdf">Slides</a> from SC16 booth talk.  More detailed coverage of this and other SC16 activities is in <a href="{% post_url 2016-11-18-osiris-at-supercomputing-2016 %}">our article about SC16</a>.
+
+<a href="{{ASSET_PATH}}/slides/SC16-NRE-OSiRIS-Poster.ppt">Poster</a> and <a href="{{ASSET_PATH}}/slides/SC16-NRE-OSiRIS-submitted.pdf">White paper</a> from the Rapid Earth Science demo at SC16.  More detailed coverage is in our <a href="{% post_url 2016-11-16-moving-usgs-data-with-dlt-and-osiris-at-sc16 %}">our article</a>.
 
 <a href="https://www.msi.umn.edu/sites/default/files/6-BenMeekhof-SC16-Ceph-BOF.pdf">Slides</a> from our talk during 'CEPH in HPC Environments' <a href="https://www.msi.umn.edu/sc16Ceph">BOF at SC16</a>.
 
