@@ -7,6 +7,8 @@ order: 2
 ---
 {% include JB/setup %}
 
+<a href="https://puppet.com/blog/nsf-puppet-help-osiris-provide-software-defined-storage-research-universities">OSiRIS feature</a> on the Puppet blog discussing the project infrastructure and our use of puppet in managing OSiRIS components.
+
 [OSiRIS contribution](http://indico.cern.ch/event/505613/contributions/2230915/) from [CHEP 2016](http://chep2016.org/) conference hosted by SLAC and LBNL in San Francisco. 
 
 <a href="https://dibbs17.org/report/Posters/1541335poster.PDF">Our poster</a> and <a href="https://dibbs17.org/report/Papers/1541335paper.PDF">whitepaper</a> from the <a href="https://dibbs17.org">DIBBS17</a> conference in Arlington, VA. 
