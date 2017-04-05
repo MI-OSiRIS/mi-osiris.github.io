@@ -1,12 +1,13 @@
 ---
 layout: default
 title : About OSiRIS
+tagline: Open Storage Research Infrastructure
 header : OSiRIS Overview
 group: navigation
 order: 1
 ---
 {% include JB/setup %}
-OSiRIS (Open Storage Research Infrastructure) is a NSF CC*DNI DIBBs grant awarded to the University of Michigan, Michigan State, Wayne State and Indiana University. [Award Details](https://nsf.gov/awardsearch/showAward?AWD_ID=1541335&HistoricalAwards=false) are publicly available on the NSF website.  
+OSiRIS is funded by the NSF via a CC*DNI DIBBs grant awarded to the University of Michigan, Michigan State, Wayne State and Indiana University. [Award Details](https://nsf.gov/awardsearch/showAward?AWD_ID=1541335&HistoricalAwards=false) are publicly available on the NSF website.  
 
 OSiRIS will provide a distributed, multi-institutional storage infrastructure that lets researchers write, manage, and share data from their own computing facility locations. It's goal is transparent, high-performance access to the same storage infrastructure from well-connected locations on any participating campus. It includes network discovery, monitoring and management tools as well as the creative use of Ceph features. The project will provide data sharing, archiving, security and life-cycle managment, implemented and maintained with a single distributed service.
 
@@ -34,8 +35,9 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 | Joseph Cottam | | | | IU Research Scientist |
 | Ezra Kissel | | | | IU Lead Research Scientist |
 | Jeremy Musser | | | | IU Student Engineer |
-| Jeff Goeke-Smith | | | | MSU Network Engineer | 
-| Andy Keen | | | | MSU Lead Engineer | 
+| Jeff Goeke-Smith | | | | MSU Network Engineer |
+| Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
+| Andy Keen | | | | MSU Lead Engineer |
 | Charlie Miller | | | | MSU Engineer | 
 | Lillian Huang | | | | UM Student Engineer (Summer 2016) |
 | Jerome Kinlaw | | | | UM Engineer | 
