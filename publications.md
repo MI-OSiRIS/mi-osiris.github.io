@@ -7,7 +7,7 @@ order: 2
 ---
 {% include JB/setup %}
 
-<a href="https://puppet.com/blog/nsf-puppet-help-osiris-provide-software-defined-storage-research-universities">OSiRIS feature</a> on the Puppet blog discussing the project infrastructure and our use of puppet in managing OSiRIS components.
+<a href="https://puppet.com/blog/nsf-puppet-help-osiris-provide-software-defined-storage-research-universities">OSiRIS featured</a> on the Puppet blog discussing the project infrastructure and our use of puppet in managing OSiRIS components.
 
 [OSiRIS contribution](http://indico.cern.ch/event/505613/contributions/2230915/) from [CHEP 2016](http://chep2016.org/) conference hosted by SLAC and LBNL in San Francisco. 
 
@@ -22,6 +22,8 @@ order: 2
 <a href="https://indico.cern.ch/event/523410/contributions/2355721/">OSiRIS contribution</a> from <a href="https://indico.cern.ch/event/523410/overview">XRootD Workshop</a> at ICEPP, Tokyo.
 
 <a href="https://indico.cern.ch/event/531810/contributions/2326471/">OSiRIS contribution</a> from <a href="https://indico.cern.ch/event/531810/overview">HEPiX Fall 2016</a> at LBNL, Berkeley.
+
+<a href="https://itblog.sandisk.com/sciences-data-challenge-university-solving-collaboration-disconnect/">UM CNSECCS and OSiRIS featured</a> on HGST SanDisk blog discussing the challenges of scientific collaboration on big data.  
 
 <a href="https://indico.cern.ch/event/466991/contributions/1143627/">OSiRIS contribution</a> from <a href="https://indico.cern.ch/event/466991/">HEPiX Spring 2016</a> at DESY, Zeuthen.
 

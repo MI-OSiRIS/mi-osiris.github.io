@@ -16,7 +16,7 @@ excerpt_separator: <!--excerpt-->
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : '<img src="assets/images/logos/logo_notext_transparent.png" style="width: 100px;">'
+title : '<img src="/assets/images/logos/logo_notext_transparent.png" style="width: 100px;">'
 tagline: Open Storage Research Infrastructure
 author :
   name : OSiRIS Project

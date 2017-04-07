@@ -3,7 +3,7 @@ layout: post
 category : article
 title: "OSiRIS in Michigan News"
 tagline: "Big data: $5M to widen 'bottleneck to discovery'"
-tags : [um, big data, scientific discovery ]
+tags : [ big data, scientific discovery, articles ]
 ---
 
 Buried in troves of data that scientists have gathered, but not yet analyzed, could be key insights to improving cancer treatment, understanding Alzheimer's, predicting climate change effects and developing cheaper, clean energy technologies.

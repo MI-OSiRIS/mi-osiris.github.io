@@ -2,7 +2,7 @@
 layout: post
 category : article
 title: "OSiRIS Featured on Puppet blog"
-tags : [ sc16, puppet ]
+tags : [ sc16, puppet, articles ]
 ---
 {% include JB/setup %}
 
