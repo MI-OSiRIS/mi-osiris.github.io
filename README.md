@@ -75,6 +75,5 @@ layout at the {{ content }} template variable.  Tags in the top material of the 
 Bootstrap and jQuery libraries are in assets/resources.  In theory it would be possible to put updated versions of these resources if 
 so inclined.  
 
-This code might vaguely resemble the Jekyll-clean and/or Jekyll-bootstrap github themes which were used as starting points 
-but have been heavily modified.
-https://github.com/scotte/jekyll-clean
+This code started out as the Jekyll-Bootstrap-3 theme though it is now heavily modified.
+http://jekyll-bootstrap-3.github.io/
