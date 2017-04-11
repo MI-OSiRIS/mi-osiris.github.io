@@ -14,8 +14,8 @@ These apply only to Ceph storage blocks:
 
 <pre>
 fs.file-max = 78718144
-vm.swappiness = 0
-vm.vfs_cache_pressure = 1
+vm.swappiness = 20
+vm.vfs_cache_pressure = 20
 
 </pre>
 
