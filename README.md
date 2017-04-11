@@ -8,7 +8,7 @@ For more information on Jekyll templates: https://help.github.com/articles/about
 
 ## Quick tutorial 
 
-Clone this repository locally.  Start a new branch - only designated people can push directly to master.  
+Clone this repository locally.  Start a new branch - only designated people can push directly to master.
 
 To make a new news post create a new file in _posts.  You can also create a post in _drafts and it will only show up if a 
 flag is passed to jekyll (more later).  The posts already there should provide good examples.
@@ -28,6 +28,7 @@ For many things, regular html will be easier and more logical to write - for exa
 You can find many examples throughout this code.    
 
 Images are in assets/images.  Refer to them with the ASSET_PATH template var:  {{IMAGE_PATH}}/sc16/total-showfloor-Thursday.jpg
+
 Specify a percentage width with all images so they resize as the site scales.  Prefer to use a larger image and scale down so it works well even on
 high-dpi displays.  Link all your images to the image file so users can click/tap on them to get the full-size view.  In certain 
 cases this may not be logical, such as for company logos or images that you need to link elsewhere.  
@@ -45,6 +46,21 @@ CSS is in assets/css/style.css.  You shouldn't generally need to modify it but i
 	ATLAS and OSiRIS S3 Gateways
 </div>
 ```
+
+## Preview your work
+
+You will need to install the Jekyll bundle to preview your work.  
+
+```
+gem install jekyll bundler
+```
+
+To preview your work on http://localhost:4000 run: 
+```
+bundle exec jekyll serve
+```
+
+To view draft posts add '--drafts' to the above command line.
 
 ## Configuration
 
