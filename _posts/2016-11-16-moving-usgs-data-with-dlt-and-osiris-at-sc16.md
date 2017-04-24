@@ -3,7 +3,7 @@ layout: post
 category : article
 title: Moving USGS Data With DLT And OSiRIS At SC16
 tagline: Rapid Distribution of Earth Science Data with the Earth Observation Depot Network and the Data Logistics Toolkit
-tags : [ sc16, supercomputing, conferences, dlt ]
+tags : [ sc16, supercomputing, conferences, dlt, papers ]
 ---
 {% include JB/setup %}
 
@@ -45,6 +45,8 @@ The Supercomputing network infrastructure provided a valuable testbed to further
 * Periscope – Measurement collection/analysis framework.
 
 More information on DLT and EODN may be found at <a href="http://data-logistics.org">data-logistics.org</a>
+
+<a href="{{ASSET_PATH}}/slides/SC16-NRE-OSiRIS-Poster.ppt">Poster</a> and <a href="{{ASSET_PATH}}/slides/SC16-NRE-OSiRIS-submitted.pdf">White paper</a> from the Rapid Earth Science demo at SC16. 
 
 <hr>
 Thanks to Ezra Kissel, Jayashree Ajay Candadai, Jeremy Musser, and the rest of the OSiRIS team at IU for orchestrating this demo and capturing visualizations.  

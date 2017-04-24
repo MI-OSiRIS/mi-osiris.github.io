@@ -7,6 +7,10 @@ order: 2
 ---
 {% include JB/setup %}
 
+<!-- <a href="">Blog Post</a> covering our engagement with the Center for Trusted Cyberinfrastructure (CTSC).  -->
+
+<a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">Final report</a> covering our collaborative design review of OSiRIS Access Assertions during our engagement with the Center for Trusted Cyberinfrastructure (CTSC). 
+
 <a href="https://puppet.com/blog/nsf-puppet-help-osiris-provide-software-defined-storage-research-universities">OSiRIS featured</a> on the Puppet blog discussing the project infrastructure and our use of puppet in managing OSiRIS components.
 
 [OSiRIS contribution](http://indico.cern.ch/event/505613/contributions/2230915/) from [CHEP 2016](http://chep2016.org/) conference hosted by SLAC and LBNL in San Francisco. 
