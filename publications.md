@@ -9,7 +9,7 @@ order: 2
 
 <!-- <a href="">Blog Post</a> covering our engagement with the Center for Trusted Cyberinfrastructure (CTSC).  -->
 
-<a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">Final report</a> covering our collaborative design review of OSiRIS Access Assertions during our engagement with the Center for Trusted Cyberinfrastructure (CTSC). 
+<a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">Final report</a> covering our collaborative design review of OSiRIS Access Assertions during our engagement with the Center for Trustworthy Scientific Cyberinfrastructure (CTSC). 
 
 <a href="https://puppet.com/blog/nsf-puppet-help-osiris-provide-software-defined-storage-research-universities">OSiRIS featured</a> on the Puppet blog discussing the project infrastructure and our use of puppet in managing OSiRIS components.
 
