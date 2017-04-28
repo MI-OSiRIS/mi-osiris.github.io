@@ -6,9 +6,9 @@ tags : [ ctsc, oaa, papers ]
 ---
 {% include JB/setup %}
 
-<a href="https://scholarworks.iu.edu/dspace/handle/2022/21307"><img src="{{IMAGE_PATH}}/logos/ctsc_logo.png" alt="CTSC Logo" class="lf" style="width: 15%"></a>
+<a href="http://blog.trustedci.org/2017/04/osiris-engagement-summary.html"><img src="{{IMAGE_PATH}}/logos/ctsc_logo.png" alt="CTSC Logo" class="lf" style="width: 15%"></a>
 
-OSiRIS recently finished a 6-month engagement with the Center for Trustworthy Scientific Cyberinfrastructure.  The 2016-2017 CTSC-OSiRIS collaborative design review of OSiRIS Access Assertions produced a set of security recommendations documented in <a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">this report</a> that the OSiRIS project plans to implement in its deployed cyberinfrastructure. CTSC identified no significant weaknesses in its review of the initial design of the OSiRIS access control system.   
+OSiRIS recently finished a 6-month engagement with the Center for Trustworthy Scientific Cyberinfrastructure which is featured on the <a href="http://blog.trustedci.org/2017/04/osiris-engagement-summary.html">CTSC Blog</a>.  The 2016-2017 CTSC-OSiRIS collaborative design review of OSiRIS Access Assertions produced a set of security recommendations documented in <a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">this report</a> that the OSiRIS project plans to implement in its deployed cyberinfrastructure. CTSC identified no significant weaknesses in its review of the initial design of the OSiRIS access control system.   
 
 From our perspective, the CTSC staff was helpful in ensuring that we had a well planned and secure design for OAA.  The engagment process was extremely valuable and we extend our thanks to CTSC!
 
@@ -35,4 +35,4 @@ design includes a common authentication and authorization mechanism across these
 supporting federated campus authentication via Internet2's <a href="https://incommon.org/federation/">InCommon</a> service and
 group-based access control (with delegated sub-groups) using Internet2's <a href="https://www.internet2.edu/products-services/trust-identity/comanage/">COmanage</a> software.
 
-The full <a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">CTSC-OSiRIS Final Report</a> is publicly available.  
+The full <a href="https://scholarworks.iu.edu/dspace/handle/2022/21307">CTSC-OSiRIS Final Report</a> is publicly available and an overview of our engagement is posted on the <a href="http://blog.trustedci.org/2017/04/osiris-engagement-summary.html">CTSC blog</a>.  
