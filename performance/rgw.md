@@ -87,7 +87,7 @@ Overall our performance is lower for the same rados_handles settings as in the p
 So far it looks like there isn't any reason to increas threads beyond 512 and rados handles beyond 8 - in fact it is detrimental.  Let's also hit some data points with higher settings to further verify.
 
 <pre>
-rgw_num_rados_handles = range from 64 - 128
+rgw_num_rados_handles = range from 32 - 64
 rgw_frontends = civetweb num_threads = 2048
 rgw_thread_pool_size = 2048
 rgw_cache_enabled = false
@@ -105,9 +105,9 @@ The numbers just get worse!
 Earlier it was noted that the rgw cache was disabled for these tests.  We repeated the tests with the best and worst configurations with cache enabled as well.
 
 <pre>
-rgw_num_rados_handles = range from 64 - 128
-rgw_frontends = civetweb num_threads = 2048
-rgw_thread_pool_size = 2048
+rgw_num_rados_handles = range from 8, 64, 128
+rgw_frontends = civetweb num_threads = 512, 2048
+rgw_thread_pool_size = 512, 2048
 rgw_cache_enabled = true
 </pre>
 
