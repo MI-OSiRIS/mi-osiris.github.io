@@ -145,7 +145,7 @@ That was a lot of testing to reach two simple conclusions, but hopefully these d
 
 Further documentation of Ceph RGW and the civetweb embedded component is available from their respective websites:
 
-<a herf="http://docs.ceph.com/docs/kraken/radosgw/config-ref/">Ceph RGW config reference</a>
+<a href="http://docs.ceph.com/docs/kraken/radosgw/config-ref/">Ceph RGW config reference</a>
 
 <a href="https://github.com/civetweb/civetweb/blob/master/docs/UserManual.md">Civetweb user manual</a>
 
