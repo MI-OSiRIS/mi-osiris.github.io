@@ -38,7 +38,8 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 | Jeff Goeke-Smith | | | | MSU Network Engineer |
 | Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
 | Andy Keen | | | | MSU Lead Engineer |
-| Charlie Miller | | | | MSU Engineer | 
+| Charlie Miller | | | | MSU Engineer |
+| My Do | | | | UM Student Engineer |  
 | Lillian Huang | | | | UM Student Engineer (Summer 2016) |
 | Jerome Kinlaw | | | | UM Engineer | 
 | Dan Kirkland | | | | UM Network Engineer | 
