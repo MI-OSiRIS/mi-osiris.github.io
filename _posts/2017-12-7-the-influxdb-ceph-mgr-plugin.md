@@ -15,9 +15,7 @@ The Ceph-mgr plugin, influx, was written to simplify the process of retrieving c
 	</a>
 	Max Operation Latency 
 </div>
-
 <br clear='all' />
-
 <!--excerpt--> 
 
 The plugin has the ability to retrieve pool and osd counters as well as pg summary counters. There are two different methods of structuring the plugin depending on which of version of Ceph is being used. More on this will be discussed later in the article.
