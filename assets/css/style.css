@@ -108,6 +108,16 @@ div[class*=-info] {
   border: 1px solid #4c964d;
   color: #FFF; }
 
+/* over-ride default nav padding */
+  .nav-stacked>li>a {
+    padding: 1px 0px;
+  } 
+
+  .navbar-nav>li>a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
  #sb_um {
       width: 70px;
     }
