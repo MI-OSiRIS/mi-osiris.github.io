@@ -9,7 +9,7 @@ sidebar: components-menu.html
 
 [Ceph](http://www.ceph.com) is a distributed object store and file system designed to provide excellent performance, reliability and scalability.  
 
-The OSiRIS Ceph deployment spans WSU, MSU, and UM.  In our first year we have deployed only 180 total OSD but will be adding equipment during each year of the project.  Our OSD are 8TB HGST disks for a total of 1.3PB raw storage.
+The OSiRIS Ceph deployment spans WSU, MSU, and UM.  We currently have deployed 660 OSD.  Our OSD are 8TB HGST disks for a total of about 5PB raw storage.
 
 [![Puppet]({{IMAGE_PATH}}/logos/puppet_logo.png){: style="float: left; margin-right: 10px"}]({{IMAGE_PATH}}/grafana/Collect-Grafana-Ceph-osd-op.png)
 All of our components are deployed and managed with a puppet module forked from a module started by the Openstack group.  The module code is available on Github: [https://github.com/MI-OSiRIS/puppet-ceph](https://github.com/MI-OSiRIS/puppet-ceph)

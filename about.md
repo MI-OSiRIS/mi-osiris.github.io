@@ -1,6 +1,6 @@
 ---
 layout: default
-title : About OSiRIS
+title : About
 tagline: Open Storage Research Infrastructure
 header : OSiRIS Overview
 group: navigation
