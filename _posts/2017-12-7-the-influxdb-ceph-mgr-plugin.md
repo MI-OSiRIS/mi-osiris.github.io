@@ -145,6 +145,9 @@ The general format of the json data point can be seen below, but this could be m
     ]
 </pre>
 
-The full version of the  <a href="https://github.com/MI-OSiRIS/ceph/blob/master/src/pybind/mgr/influx/module.py"> influx module </a> and <a href="https://github.com/MI-OSiRIS/ceph/blob/master/doc/mgr/influx.rst"> additional information </a> about the plugin can be found under Ceph's master branch. 
+The full version of the  <a href="https://github.com/MI-OSiRIS/ceph/blob/master/src/pybind/mgr/influx/module.py"> influx module </a> and <a href="https://github.com/MI-OSiRIS/ceph/blob/master/doc/mgr/influx.rst"> additional information </a> about the plugin can be found under Ceph's master branch. Template of Grafana Dashboards featured can be found at the following links:  
+* https://grafana.com/dashboards/4238
+* https://grafana.com/dashboards/4244
+
 
 
