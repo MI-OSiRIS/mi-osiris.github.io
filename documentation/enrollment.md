@@ -6,7 +6,10 @@ header : Enrolling in OSiRIS
 {% include JB/setup %}
 Introduction:
 OSiRIS is a storage infrastructure for research universities for the state of Michigan. The main objective of OSiRIS is to manage data collection, storage, and sharing between Universities.  
+
 To get started using OSiRIS the first requirement is to establish an identity.  This identity is based on authentication with your existing institutional credentials.  Your OSiRIS identity can be linked to one or more OSiRIS virtual organizations.
+
+Once you have an identity and access token as described below you can use any S3 compatible client to access https://rgw.osris.org, create buckets, and PUT/GET data.  
 
 <h3>Getting started</h3>
 
