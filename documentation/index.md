@@ -17,6 +17,12 @@ How to enroll in your OSiRIS COU and obtain access tokens for use with OSiRIS St
 </p>
 
 <p>
+    <a href="groups.html">Managing OSiRIS Groups:</a>
+
+    How to create new posix groups and manage memberships
+</p>
+
+<p>
 <a href="s3fuse.html">Configuring an S3 fuse mount:</a>
 
 OSiRIS can provide Ceph storage accessible with the S3 protocol.  The S3 fuse program will present S3 buckets as mounted filesystems though the standard http-based S3 protocol is used for all operations and typical S3 clients can also be used to access the same data.     
