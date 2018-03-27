@@ -17,6 +17,22 @@ How to enroll in your OSiRIS COU and obtain access tokens for use with OSiRIS St
 </p>
 
 <p>
+<a href="sshkey.html">Uploading an SSH key:</a>
+
+How to upload your ssh key so you can use OSiRIS ssh/scp/sftp gateways
+</p>
+
+<p>
+    <a href="s3.html">Using OSiRIS S3:</a>
+    How to obtain credentials and use OSiRIS S3 gateways
+</p>
+
+<p>
+    <a href="globus.html">Using Globus with OSiRIS CephFS:</a>
+    How to get setup to use Globus with OSiRIS CephFS
+</p>
+
+<p>
     <a href="groups.html">Managing OSiRIS Groups:</a>
 
     How to create new posix groups and manage memberships
@@ -25,9 +41,9 @@ How to enroll in your OSiRIS COU and obtain access tokens for use with OSiRIS St
 <p>
 <a href="s3fuse.html">Configuring an S3 fuse mount:</a>
 
-OSiRIS can provide Ceph storage accessible with the S3 protocol.  The S3 fuse program will present S3 buckets as mounted filesystems though the standard http-based S3 protocol is used for all operations and typical S3 clients can also be used to access the same data.     
+ The S3 fuse program will present S3 buckets as mounted filesystems though the standard http-based S3 protocol.
 </p>
 
 <h3>OSiRIS Setup Documentation</h3>
 
-Please check back later for more documentation on this topic.  
+At this time we do not have detailed setup documentation for OSiRIS.  However, all of the components used are publicly available.  In cases where we wrote or modified our own components they are available from our <a href="https://github.com/MI-OSiRIS">Github repository</a>.
