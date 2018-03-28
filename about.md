@@ -21,33 +21,41 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 
 <br style="clear: both"/>
 
-**OSiRIS PIs**
+<h4>OSiRIS PIs</h4>
 
 | Shawn McKee      | | | | Lead PI University of Michigan  |
 | Patrick Gossman  | | | | Co-PI Wayne State University    |
 | Kenneth Merz     | | | | Co-PI Michigan State University |
 | Martin Swany     | | | | Co-PI Indiana University        |
 
-<br />
-**OSiRIS Staff**
+<h4>Current OSiRIS Staff</h4>
 
-| Jayashree Candadai | | | | IU Principal Research Engineer |
-| Joseph Cottam | | | | IU Research Scientist |
 | Ezra Kissel | | | | IU Lead Research Scientist |
-| Jeremy Musser | | | | IU Student Engineer |
+| Jeremy Musser | | | | IU Grad Student Engineer |
+| Alex Shroyer | | | | IU Engineer | 
+| Grant Skipper | | | | IU Grad Student Engineer | 
 | Jeff Goeke-Smith | | | | MSU Network Engineer |
-| Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
 | Andy Keen | | | | MSU Lead Engineer |
 | Charlie Miller | | | | MSU Engineer |
+| Nick Rahme | | | | MSU Engineer | 
 | My Do | | | | UM Student Engineer |  
-| Lillian Huang | | | | UM Student Engineer (Summer 2016) |
 | Jerome Kinlaw | | | | UM Engineer | 
 | Dan Kirkland | | | | UM Network Engineer | 
 | Benjeman Meekhof | | | | UM Lead Engineer |
-| Michael Gregorowicz | | | | WSU Systems Architect |
+| Keane Wolter | | | | UM Engineer |
 | Matt Lessins | | | | WSU Network Engineer |
 | Carlo Musante | | | | WSU Network Engineer |
 | Michael Thompson | | | | WSU Lead Engineer |
+
+<h4>Former OSiRIS Staff</h4>
+
+These individuals contributed to OSiRIS but are not currently involved in the project.
+
+| Jayashree Candadai | | | | IU Principal Research Engineer |
+| Miao Zhang | | | | IU Grad Student Engineer |
+| Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
+| Lillian Huang | | | | UM Student Engineer |
+| Michael Gregorowicz | | | | WSU Systems Architect |
 
 
 
