@@ -8,6 +8,8 @@ order: 7
 
 We've included here instructions for OSiRIS users as well as for other sites that are interested in setting up an installation similar to OSiRIS.
 
+Questions:  <a href="mailto:osiris-help@umich.edu">osiris-help@umich.edu</a>
+
 <h3>User Documentation</h3>
 
 <p>
@@ -31,6 +33,12 @@ How to upload your ssh key so you can use OSiRIS ssh/scp/sftp gateways
     <a href="globus.html">Using Globus with OSiRIS CephFS:</a>
     How to get setup to use Globus with OSiRIS CephFS
 </p>
+
+<p>
+    <a href="rados.html">Using RADOS:</a>
+    How to use OSiRIS Ceph object store directly with rados libs and utils (requires configuration, please contact us)
+</p>
+
 
 <p>
     <a href="groups.html">Managing OSiRIS Groups:</a>

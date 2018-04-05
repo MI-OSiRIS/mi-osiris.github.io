@@ -8,7 +8,7 @@ header : Using OSiRIS Ceph RADOS
 
 OSiRIS is built on top of the Ceph object storage cluster.  To leverage Ceph directly you can use <a href="http://docs.ceph.com/docs/master/man/8/rados/">clients that understand rados</a> or you can build applications that use <a href="http://docs.ceph.com/docs/master/rados/api/">librados</a>.
 
-How exactly you might implement librados or leverage a rados client is beyond the scope of this document but we are happy to work with you if you are interested in trying something!  
+How exactly you might implement librados or leverage a rados client is beyond the scope of this document but we are happy to work with you if you are interested in trying something!  Please note that this service is not generally open to public networks.  If you require access please <a href="mailto:osiris-help@umich.edu">contact us</a>.  
 
 Every COU has a pool named <strong>cou.YourOrg.rados</strong>.  As currently implemented every member of your COU can retrieve a key to read and write to this pool.  We can create other pools for you with more limited access.  
 
