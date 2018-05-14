@@ -1,0 +1,6 @@
+[default]
+access_key  = Your CephRgwToken
+secret_key  = 
+host_base   = rgw.osris.org
+host_bucket = %(bucket)s.rgw.osris.org
+use_https   = True
