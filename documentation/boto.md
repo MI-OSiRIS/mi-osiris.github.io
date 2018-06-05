@@ -261,3 +261,5 @@ Most of these examples are adapted from the docs linked above at ceph.com.
 These examples and other examples at ceph.com refer to boto2 but you may be using the most current boto3.  Docs for that version are at the URL below:
 
 <a href="http://boto3.readthedocs.io/en/latest/guide/s3-examples.html">S3 Docs for Boto3</a>
+
+OSiRIS S3 supports Server Side Encryption with client provided keys (SSE-C).  The examples below detail how to use this feature.  The full specification for SSE-C is [documented here](https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html).
