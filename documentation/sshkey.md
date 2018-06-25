@@ -47,13 +47,7 @@ On the following screen you have the option to paste in the text of your SSH key
 
 
 If pasting a key you must paste each part of the key separately:
-<pre>
-ssh-rsa AAAAB3Nza.... user@host.org
-
-Key Type = ssh-rsa
-Comment = user@host.org
-Key = AAAAAB3Nza...etc
-</pre>
+<img style="width: 70%" src="{{IMAGE_PATH}}/documentation/sshkey/ssh-key-parts.jpg" alt="COmanage SSH key upload screen"/>
 
 Note:  A real key will be much longer.
 
