@@ -35,6 +35,11 @@ How to upload your ssh key so you can use OSiRIS ssh/scp/sftp gateways
 </p>
 
 <p>
+    <a href="nfs.html">Using NFS with OSiRIS:</a>
+    How to access NFS exports of OSiRIS CephFS on UM or MSU campuses
+</p>
+
+<p>
     <a href="rados.html">Using RADOS:</a>
     How to use OSiRIS Ceph object store directly with rados libs and utils (requires configuration, please contact us)
 </p>
