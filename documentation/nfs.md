@@ -15,7 +15,7 @@ You can copy from here to other paths mounted on flux-login, or work with the da
 
 <h2>MSU</h2>
 
-OSiRIS storage is mounted on Globus / transfer nodes at MSU.
+HPCC users at MSU can access OSiRIS storage on globus-01.hpcc.msu.edu at /mnt/cephfs.  After login you will need to run 'kinit' and enter your password to manually obtain Kerberos credentials.
 
 <h2>Mounting on your own client</h2>
 
