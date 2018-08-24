@@ -7,6 +7,8 @@ order: 2
 ---
 {% include JB/setup %}
 
+<a href="https://indico.cern.ch/event/669506/contributions/2782243/attachments/1559925/2455243/DOMA-OSiRIS-ShawnMcKee.pdf">Slides</a> from invited talk at the Data Organisation, Management and Access (DOMA) in Astronomy, Genomics and High Energy Physics <a href="https://indico.cern.ch/event/669506/">workshop</a>, November 16, 2017, at the Flatiron Institute (Simons Foundation) in New York City. 
+
 <a href="https://www.jlab.org/indico/event/213/session/5/contribution/18/material/slides/">Slides</a> from <a href="https://www.jlab.org/conferences/trends2017/">JLAB 2017 Future Trends</a> conference in Newport News, VA.
 
 <a href="http://micde.umich.edu/wp-content/uploads/sites/6/2016/03/CNSECCS-Symposium-OSiRIS.pdf">Slides</a> from University of Michigan <a href="http://micde.umich.edu/centers/cnseccs/2017-symposium/">2017 CNSECCS Symposium</a> in Ann Arbor, MI (Center for Network and Storage Enabled Collaborative Computational Science).
