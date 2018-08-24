@@ -85,11 +85,13 @@
  </div>
       <hr>
       <footer>
-        <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          <span class="pull-right text-muted">
-    		<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1541335&HistoricalAwards=false">Supported by the NSF</a>
-          </span>
+        <p class="small text-muted">
+          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} --
+
+    		  This material is based upon work supported by the National Science Foundation under Grant Number <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1541335&HistoricalAwards=false">1541335</a>
+        </p>
+        <p class="small text-muted">
+          Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
         </p>
       </footer>
     </div>
