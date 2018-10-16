@@ -7,7 +7,11 @@ order: 2
 ---
 {% include JB/setup %}
 
-<a href="https://indico.cern.ch/event/669506/contributions/2782243/attachments/1559925/2455243/DOMA-OSiRIS-ShawnMcKee.pdf">Slides</a> from invited talk at the Data Organisation, Management and Access (DOMA) in Astronomy, Genomics and High Energy Physics <a href="https://indico.cern.ch/event/669506/">workshop</a>, November 16, 2017, at the Flatiron Institute (Simons Foundation) in New York City. 
+<a href="https://indico.cern.ch/event/692449/contributions/3170057">Slides</a> from UM Center for Network and Storage-Enabled Collaborative Computational Science <a href="https://micde.umich.edu/centers/cnseccs/symposia/">2018 Symposium</a> in Ann Arbor, Michigan.  
+
+<a href="https://indico.cern.ch/event/730908/contributions/3153337">Slides</a> from <a href="https://indico.cern.ch/event/730908/">HEPiX Fall 2018 Workshop</a> at Casa Convalescència in Barcelona, Spain
+
+<a href="https://indico.cern.ch/event/669506/contributions/2782243">Slides</a> from invited talk at the Data Organisation, Management and Access (DOMA) in Astronomy, Genomics and High Energy Physics <a href="https://indico.cern.ch/event/669506/">workshop</a>, November 16, 2017, at the Flatiron Institute (Simons Foundation) in New York City. 
 
 <a href="https://www.jlab.org/indico/event/213/session/5/contribution/18/material/slides/">Slides</a> from <a href="https://www.jlab.org/conferences/trends2017/">JLAB 2017 Future Trends</a> conference in Newport News, VA.
 
