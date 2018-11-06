@@ -14,7 +14,7 @@ tags : [ sc16, supercomputing, conferences ]
 
 <a href="http://sc16.supercomputing.org"><img src="{{IMAGE_PATH}}/sc16/SC16.4CBlackRedTextOutline.png" alt="SC16 Logo" class="lf" style="width: 35%"></a>
 
-<a href="http://arc.umich.edu/"><img style="width: 25%; padding-top: 20px" src="{{IMAGE_PATH}}/logos/arc-logo.png" alt="UM ARC Logo"></a>
+<a href="http://arc.umich.edu/"><img style="width: 25%; padding-top: 20px" src="{{IMAGE_PATH}}/logos/arc_logo_square.png" alt="UM ARC Logo"></a>
 
 <br clear='left'>
 

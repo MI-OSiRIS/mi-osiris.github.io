@@ -14,8 +14,13 @@ OSiRIS will provide a distributed, multi-institutional storage infrastructure th
 <br />
   
   
-<a href="http://arc-ts.umich.edu/systems-and-services/osiris/"><img src="{{IMAGE_PATH}}/logos/arcts_signature_vertical.png" style="width: 25%; float: left; margin-right: 20px"></a>
+<a href="http://arc-ts.umich.edu/systems-and-services/osiris/"><img src="{{IMAGE_PATH}}/logos/arcts_logo_banner.png" style="width: 45%"></a>
+
 OSiRIS project engineering is coordinated by University Of Michigan Advanced Research Computing - Technology Services ([ARC-TS](http://arc-ts.umich.edu/systems-and-services/osiris/)).    
+
+<br style="clear:both" />
+
+<a href="https://micde.umich.edu/research/"><img src="{{IMAGE_PATH}}/logos/micde_logo_banner.png" style="width: 50%;"></a>
 
 The Principal Investigator is Shawn McKee, Research Scientist in the Department of Physics and the Director of the Center for Network and Storage-Enabled Collaborative Computational Science ([CNSECCS](http://micde.umich.edu/centers/cnseccs/)). CNSECCS and OSiRIS are operated under the auspices of the Michigan Institute for Computational Discovery and Engineering ([MICDE](http://micde.umich.edu/osiris)).
 
@@ -38,11 +43,9 @@ The Principal Investigator is Shawn McKee, Research Scientist in the Department 
 | Andy Keen | | | | MSU Lead Engineer |
 | Charlie Miller | | | | MSU Engineer |
 | Nick Rahme | | | | MSU Engineer | 
-| My Do | | | | UM Student Engineer |  
 | Jerome Kinlaw | | | | UM Engineer | 
 | Dan Kirkland | | | | UM Network Engineer | 
 | Benjeman Meekhof | | | | UM Lead Engineer |
-| Keane Wolter | | | | UM Engineer |
 | Matt Lessins | | | | WSU Network Engineer |
 | Carlo Musante | | | | WSU Network Engineer |
 | Michael Thompson | | | | WSU Lead Engineer |
@@ -54,8 +57,12 @@ These individuals contributed to OSiRIS but are not currently involved in the pr
 | Jayashree Candadai | | | | IU Principal Research Engineer |
 | Miao Zhang | | | | IU Grad Student Engineer |
 | Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
+| My Do | | | | UM Student Engineer |  
 | Lillian Huang | | | | UM Student Engineer |
+| Ryan Marshall | | | | UM Student Engineer |
+| Keane Wolter | | | | UM Engineer |
 | Michael Gregorowicz | | | | WSU Systems Architect |
+
 
 
 

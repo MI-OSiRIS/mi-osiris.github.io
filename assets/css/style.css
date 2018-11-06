@@ -33,12 +33,29 @@ p {
 
 ul { overflow: auto; }
 
-.lf {
-  float: left;
-  margin-right: 10px;
+div.floatblock p, div {
+ overflow: hidden; 
 }
 
-.rf {
+div.floatblock p {
+  margin: 0 0 20px 0;
+}
+
+div.floatblock div {
+  margin: 20px 0 20px 0;
+  clear: both;
+}
+
+.lf, div.lf img {
+  float: left;
+  margin-right: 10px;  
+}
+
+div.lf br, div.rf br {
+  clear: both;
+}
+
+.rf, div.rf img {
   float: right;
   margin-left: 10px;
 }
@@ -123,11 +140,11 @@ div[class*=-info] {
   }
 
  #sb_um {
-      width: 70px;
+      width: 75px;
     }
 
     #sb_msu {
-      width: 90px;
+      width: 95px;
     }
 
     #sb_nsf {
@@ -135,11 +152,12 @@ div[class*=-info] {
     }
 
     #sb_wsu {
-      width: 90px;
+      width: 95px;
     }
 
     #sb_iu {
-      width: 70px;
+      width: 65px;
+      margin-top: 5px;
     }
 
  @media (max-width: 768px) { 
@@ -156,7 +174,7 @@ div[class*=-info] {
     }
 
     #sb_wsu {
-      width: 65px;
+      width: 70px;
     }
 
     #sb_iu {
