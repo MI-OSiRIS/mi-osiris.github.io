@@ -94,17 +94,17 @@ Our demonstration will encompass our use of storage features, advanced networkin
 
 Thanks to everyone on the OSiRIS team at University of Michigan, Wayne State University, Indiana University, and Michigan State University for helping to make the conference a great success!
 
-<img src="{{IMAGE_PATH}}/sc18/its-signature-vertical.png" alt="UM ITS Logo" class="lf" style="width:20%">
+<img src="{{IMAGE_PATH}}/sc18/its-signature-vertical.png" alt="UM ITS Logo" class="lf" style="width:25%">
 We appreciate the support of Nick Grundler and Dan Eklund from the UM ITS team.  Their hard work before and during the conference made sure we had stable, fast network paths to the conference and on the showroom floor.    
 
 <br clear='left' />
 
 Special thanks to Wenjing Wu and Troy Morgan from UM Physics/AGLT2 for assistance with equipment preparation before and after the conference. 
 
-Thanks to Merit Networks for assistance providing 100Gb network paths from Michigan to the conference.
-
+Thanks to Merit Networks and Internet2 for assistance providing 100Gb network paths from Michigan to the conference.
 
 <a href="https://www.merit.edu/"><img style="width: 30%" src="{{IMAGE_PATH}}/sc18/merit_logo.png" alt="Merit Logo"></a>
+<a href="https://www.internet2.edu"><img style="width: 30%" src="{{IMAGE_PATH}}/sc18/internet2_logo.gif" alt="Internet2 Logo"></a>
 
 Thanks to Juniper and Adva for providing network equipment.
 
