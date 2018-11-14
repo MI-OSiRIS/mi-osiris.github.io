@@ -80,7 +80,6 @@ Our demonstration will encompass our use of storage features, advanced networkin
         <a href="{{IMAGE_PATH}}/sc18/OSiRIS-SC18-OverviewDiagram.jpg">
             <img style="width: 100%" src="{{IMAGE_PATH}}/sc18/OSiRIS-SC18-OverviewDiagram.jpg" alt="Conceptual diagram for OSiRIS SC18" />
         </a>
-        Demo Equipment Crate (rear)
         </div>
         </p> 
     </li>
