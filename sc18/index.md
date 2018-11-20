@@ -4,7 +4,7 @@ title : SC18 OSiRIS Sandbox
 ---
 {% include JB/setup %}
 
-Welcome Supercomputing 2018 users!
+Welcome Supercomputing 2018 users!  This sandbox is no longer active but the page is left for reference.  If you have questions about OSiRIS please email <a href="mailto: osiris-help@umich.edu">osiris-help@umich.edu</a>.
 
 OSiRIS has configured a virtual organization 'sandbox' available to anyone at SC18 on SCInet.  The storage used by this VO has a Ceph cache tier overlaid.  This cache is hosted on the hardware in the UM and MSU combined booth:
 
@@ -53,4 +53,4 @@ This works slightly differently and requires enrollment in OSiRIS.
 
 If you are unable to complete the enrollment process because of a problem or if you do not belong to any of the available institutions please <a href="mailto:bmeekhof@umich.edu?subject=SC18 Sandbox">email us</a> with subject "SC18 Sandbox" and credentials can be manually created for you.
 
-For more details on our SC18 demo and configuration please have a look at the <a href="{% post_url 2018-11-10-osiris-at-supercomputing-2018 %}">full article</a>.
+For more details on our SC18 demo and configuration please have a look at the <a href="{% post_url 2018-11-19-osiris-at-supercomputing-2018 %}">full article</a>.

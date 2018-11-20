@@ -46,6 +46,10 @@ div.floatblock div {
   clear: both;
 }
 
+ul.bolditem span {
+  font-weight: bold;
+}
+
 .lf, div.lf img {
   float: left;
   margin-right: 10px;  

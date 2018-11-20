@@ -7,7 +7,7 @@ order: 2
 ---
 {% include JB/setup %}
 
-<a href="{{ASSET_PATH}}/slides/SC18-Ceph-BOF-BenMeekhof.pdf">Slides</a> from <a href="https://www.msi.umn.edu/ceph-hpc-environments-sc18">Ceph BOF</a> at <a href="https://sc18.supercomputing.org/presentation/?id=bof103&sess=sess364">Supercomputing 2018</a> in Dallas, TX.  
+<a href="{{ASSET_PATH}}/slides/SC18-Ceph-BOF-BenMeekhof.pdf">Slides</a> from <a href="https://www.msi.umn.edu/ceph-hpc-environments-sc18">Ceph BOF</a> at <a href="https://sc18.supercomputing.org/presentation/?id=bof103&sess=sess364">Supercomputing 2018</a> in Dallas, TX.  More detailed coverage of SC18 activities is in <a href="{% post_url 2018-11-19-osiris-at-supercomputing-2018 %}">our article about SC18</a>.
 
 <a href="https://indico.cern.ch/event/692449/contributions/3170057">Slides</a> from UM Center for Network and Storage-Enabled Collaborative Computational Science <a href="https://micde.umich.edu/centers/cnseccs/symposia/">2018 Symposium</a> in Ann Arbor, Michigan.  
 
