@@ -68,9 +68,7 @@ Our demonstration encompassed our storage features, advanced networking, identit
 <ul class="bolditem">
     <li> 
         <p>
-        <span>Storage Features - caching:</span> Typical Ceph storage clusters are heavily affected by network latency between components and clients.  As such a client accessing OSiRIS storage in Michigan from the SC showroom would not see similar performance to our more proximate users.  OSiRIS will deploy dedicated storage hardware for a 
-        <!-- <a href="{ post_url 2018-11-15-ceph-cache-tiering-demo-at-sc18 %}"> -->
-            Ceph cache-tier at SC18 to show that it is possible to achieve reasonable performance even though the backing data pool components are geographically quite far away.   The SC18 collaboration with SLATE also leveraged this configuration as a 50TB RBD for their XCache container. 
+        <span><a href="{% post_url 2018-11-15-ceph-cache-tiering-demo-at-sc18 %}">Storage Features - caching</a>:</span> Typical Ceph storage clusters are heavily affected by network latency between components and clients.  As such a client accessing OSiRIS storage in Michigan from the SC showroom would not see similar performance to our more proximate users.  OSiRIS will deploy dedicated storage hardware for a Ceph cache-tier at SC18 to show that it is possible to achieve reasonable performance even though the backing data pool components are geographically quite far away.   The SC18 collaboration with SLATE also leveraged this configuration as a 50TB RBD for their XCache container. 
         </p>
     </li>
     <li>
