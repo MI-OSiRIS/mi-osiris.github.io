@@ -15,9 +15,7 @@ The Ceph-mgr plugin, influx, was written to simplify the process of retrieving c
 	</a>
 	Max Operation Latency 
 </div>
-<br clear='all' />
 <!--excerpt--> 
-
 The plugin has the ability to retrieve pool and osd counters as well as pg summary counters. There are two different methods of structuring the plugin depending on which of version of Ceph is being used. More on this will be discussed later in the article.
 
 In order for the plugin to function, there are a couple of main components that are required. This includes the init, serve, and shutdown functions. These functions allow the plugin to run, so there is not much variation and most ceph-mgr plugins utilized the same structure. Examples of the basic structure of these functions can be seen below.
@@ -67,15 +65,12 @@ Other functions that are needed are the functions that retrieve the specific per
     ...
 </pre>
 
-
 <div class="imgwrap" style = "width: 100% ; margin-bottom: 50px">
 	<a href="{{IMAGE_PATH}}/influx/cluster_space_allo.PNG" style="width: 100%">
 		<img src="{{IMAGE_PATH}}/influx/cluster_space_allo.PNG" style="width: 100%">
 	</a>
 	Cluster Space Allocated  
 </div>
-
-<br clear='all' />
 
 In the ``get_pg_summary() function``, information about the pool and osd can be pulled from ``self.get('pg_summary')``. From there, we can decide whether we want to get osd or pool information, loop through it to pull out specific stats and format it as a json data point. 
 
@@ -91,15 +86,12 @@ In the ``get_pg_summary() function``, information about the pool and osd can be 
                 ...
 </pre>
 
-
 <div class="imgwrap" style = "width: 100%; margin-bottom: 50px">
 	<a href="{{IMAGE_PATH}}/influx/pg_status.PNG" style="width: 100%">
 		<img src="{{IMAGE_PATH}}/influx/pg_status.PNG" style="width:100%">
 	</a>
 	Pg Status  
 </div>
-
-<br clear='all' />
 
 As for the osd metrics, there are two ways to retrieve these stats. In the current Luminous version of Ceph, this function is structured similar to the pool and pg summary functions. The only difference is that stats are retrieved from ``self.get('osd_map')['osd']``. Similarly to the function that gathered the pool stats, we would need to loop through all the specific stats that we want per osd and format it into a json data point. 
 
@@ -115,15 +107,12 @@ In the master version of Ceph, all the performance counters per osd can be retri
             ...
 </pre>
 
-
 <div class="imgwrap" style = "width: 100%; margin-bottom: 50px">
 	<a href="{{IMAGE_PATH}}/influx/cluster_throughput.PNG" style="width: 100%">
 		<img src="{{IMAGE_PATH}}/influx/cluster_throughput.PNG" style="width: 100%">
 	</a>
 	Cluster Throughput 
 </div>
-
-<br clear='all' />
 
 The general format of the json data point can be seen below, but this could be modified according to how the user wants to sort and organize their data. 
 
@@ -143,6 +132,5 @@ The general format of the json data point can be seen below, but this could be m
     ]
 </pre>
 
-The full version of the  <a href="https://github.com/MI-OSiRIS/ceph/blob/master/src/pybind/mgr/influx/module.py"> influx module </a> and <a href="https://github.com/MI-OSiRIS/ceph/blob/master/doc/mgr/influx.rst"> additional information </a> about the plugin can be found under Ceph's master branch. 
-
+For more information on the influxdb module you can check out the <a href="http://docs.ceph.com/docs/master/mgr/influx/">Ceph Documentation</a> or most current code in the <a href="https://github.com/ceph/ceph/tree/master/src/pybind/mgr/influx">Ceph git repository</a>.  The module was initially contributed to the Ceph tree by the author of this article <a href="https://github.com/ceph/ceph/commits?author=mhdo2">My Do</a>.
 
