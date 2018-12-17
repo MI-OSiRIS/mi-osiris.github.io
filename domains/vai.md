@@ -5,7 +5,7 @@ tagline: Leveraging Ceph Caching
 ---
 {% include JB/setup %}
 
-OSIRIS at Van Andel Institute will enable VAI bioinformaticians to work with MSU researchers to better understand Parkinson's disease and cancer, and will allow access to VAI researchers with MSU appointments to access the computational resources at ICER.
+<span class="light-em">OSIRIS at Van Andel Institute will enable VAI bioinformaticians to work with MSU researchers to better understand Parkinson's disease and cancer, and will allow access to VAI researchers with MSU appointments to access the computational resources at ICER.</span>
 
 The OSiRIS site at Van Andel is deployed and managed similar to other OSiRIS sites.  The 3 nodes there are part of the multi-institutional OSiRIS cluster and OSD are partitioned into a separate Ceph Crush tree to be used in rules defining cache tier pools.  
 

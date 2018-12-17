@@ -32,9 +32,9 @@ distinguish maternal from paternal transcripts we have to generate sufficient
 sequences at positions where the two transcripts differ. This requires deep
 sequencing resulting in large files (~300x10 6 sequences/sample, ~ 17 Gb sequence
 file). The mapping of these sequences to the genome generates BAM files that are
-also large (~ 7 Gb). Because it is computationally expensive to generate BAM files
+also large (~ 7 Gb). <span class="light-em">Because it is computationally expensive to generate BAM files
 we take advantage to archive the files on OSiRIS for re-analysis with more up to
-date workflows. Analysis of allele specific expression is challenging from a bio-
+date workflows.</span> Analysis of allele specific expression is challenging from a bio-
 informatics point of view and new refined workflows are proposed frequently, some
 of which we want to test on our dataset requiring re-analysis of the archived files.
 
@@ -45,8 +45,8 @@ population level allele frequency table. The study population speaks a language 
 does not group with other West African languages and the geographical origins of
 the group are uncertain. Thus, there is interest by population geneticists to use our
 data to determine genetic affinities with other ethnic groups to solve the question of
-their origin and time of isolation. We will use the OSiRIS platform to share the data
-with population geneticists at the University of Michigan.
+their origin and time of isolation. <span class="light-em">We will use the OSiRIS platform to share the data
+with population geneticists at the University of Michigan.</span>
 
 As stunting leads to a wide array of health problems from poor cognitive function to
 metabolic syndrome, it is important to understand how it is transmitted to the next

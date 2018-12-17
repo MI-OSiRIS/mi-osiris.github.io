@@ -32,6 +32,6 @@ Figure 13.19 from <a href="http://dx.doi.org/10.17125/gov2018.ch13">A Primer on 
 The figure at right shows the sea surface height signature of internal tides, which are tides that have their greatest signals at depth, but still have a signal at the sea surface that is measurable by satellite altimeters.  The figure, taken from Jay Shriver's 2012 paper, compares the internal tide amplitudes in the Navy model vs. satellite altimetry.  The five subregions denoted by black boxes in (B) are used to compute the area-averaged amplitudes in Table 2 of the paper.
 
 
-OSiRIS is a very useful tool for us, because it allows us to share the outputs of model simulations run on Navy and NASA machines, with scientists who do not have accounts on those machines.  OSiRIS therefore allows for a wider dissemination of model information.  
+<span class="light-em">OSiRIS is a very useful tool for us, because it allows us to share the outputs of model simulations run on Navy and NASA machines, with scientists who do not have accounts on those machines.  OSiRIS therefore allows for a wider dissemination of model information.  </span>
 
 
