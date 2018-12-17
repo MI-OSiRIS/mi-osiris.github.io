@@ -98,12 +98,12 @@ Our demonstration encompassed our storage features, advanced networking, identit
 Thanks to everyone on the OSiRIS team at University of Michigan, Wayne State University, Indiana University, and Michigan State University for helping to make the conference a great success!
 
 <a href="https://its.umich.edu/infrastructure"><img src="{{IMAGE_PATH}}/sc18/its-signature-vertical.png" alt="UM ITS Logo" class="lf" style="width:20%"></a>
-We appreciate the support of Nick Grundler and Dan Eklund from the UM ITS team.  Their hard work before and during the conference made sure we had stable, fast network paths to the conference and on the showroom floor.    
+We appreciate the support of Nick Grundler and Dan Eklund from the U-M ITS team.  Their hard work before and during the conference made sure we had stable, fast network paths to the conference and on the showroom floor.    
 
 <br style="clear: both;" />
 
 <a href="http://www.aglt2.org"><img src="{{IMAGE_PATH}}/logos/aglt2_logo.png" alt="AGLT2 Logo" class="lf" style="margin-top: 10px; width:11%"></a>
-Special thanks to Wenjing Wu and Troy Morgan from UM Physics/AGLT2 for assistance with equipment preparation before and after the conference. 
+Special thanks to Wenjing Wu and Troy Morgan from U-M Physics/AGLT2 for assistance with equipment preparation before and after the conference. 
 
 <br style="clear: both;" />
 

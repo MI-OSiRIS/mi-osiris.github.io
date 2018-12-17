@@ -36,7 +36,7 @@ How to upload your ssh key so you can use OSiRIS ssh/scp/sftp gateways
 
 <p>
     <a href="nfs.html">Using NFS with OSiRIS:</a>
-    How to access NFS exports of OSiRIS CephFS on UM or MSU campuses
+    How to access NFS exports of OSiRIS CephFS on U-M or MSU campuses
 </p>
 
 <p>

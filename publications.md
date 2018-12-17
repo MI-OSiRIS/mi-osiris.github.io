@@ -11,7 +11,7 @@ order: 2
 
 <a href="{{ASSET_PATH}}/slides/SC18-Ceph-BOF-BenMeekhof.pdf">Slides</a> from <a href="https://www.msi.umn.edu/ceph-hpc-environments-sc18">Ceph BOF</a> at <a href="https://sc18.supercomputing.org/presentation/?id=bof103&sess=sess364">Supercomputing 2018</a> in Dallas, TX.  More detailed coverage of SC18 activities is in <a href="{% post_url 2018-11-19-osiris-at-supercomputing-2018 %}">our article about SC18</a>.
 
-<a href="https://indico.cern.ch/event/692449/contributions/3170057">Slides</a> from UM Center for Network and Storage-Enabled Collaborative Computational Science <a href="https://micde.umich.edu/centers/cnseccs/symposia/">2018 Symposium</a> in Ann Arbor, Michigan.  
+<a href="https://indico.cern.ch/event/692449/contributions/3170057">Slides</a> from U-M Center for Network and Storage-Enabled Collaborative Computational Science <a href="https://micde.umich.edu/centers/cnseccs/symposia/">2018 Symposium</a> in Ann Arbor, Michigan.  
 
 <a href="https://indico.cern.ch/event/730908/contributions/3153337">Slides</a> from <a href="https://indico.cern.ch/event/730908/">HEPiX Fall 2018 Workshop</a> at Casa Convalescència in Barcelona, Spain
 
@@ -39,7 +39,7 @@ order: 2
 
 <a href="https://indico.cern.ch/event/531810/contributions/2326471/">OSiRIS contribution</a> from <a href="https://indico.cern.ch/event/531810/overview">HEPiX Fall 2016</a> at LBNL, Berkeley.
 
-<a href="https://itblog.sandisk.com/sciences-data-challenge-university-solving-collaboration-disconnect/">UM CNSECCS and OSiRIS featured</a> on HGST SanDisk blog discussing the challenges of scientific collaboration on big data.  
+<a href="https://itblog.sandisk.com/sciences-data-challenge-university-solving-collaboration-disconnect/">U-M CNSECCS and OSiRIS featured</a> on HGST SanDisk blog discussing the challenges of scientific collaboration on big data.  
 
 <a href="https://indico.cern.ch/event/466991/contributions/1143627/">OSiRIS contribution</a> from <a href="https://indico.cern.ch/event/466991/">HEPiX Spring 2016</a> at DESY, Zeuthen.
 

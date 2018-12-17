@@ -29,6 +29,13 @@ OSiRIS project engineering is coordinated by University Of Michigan Advanced Res
 
 The Principal Investigator is Shawn McKee, Research Scientist in the Department of Physics and the Director of the Center for Network and Storage-Enabled Collaborative Computational Science ([CNSECCS](http://micde.umich.edu/centers/cnseccs/)). CNSECCS and OSiRIS are operated under the auspices of the Michigan Institute for Computational Discovery and Engineering ([MICDE](http://micde.umich.edu/osiris)).
 
+<br style="clear:both" />
+<a href="https://ceph.com/foundation">
+    <img style="width: 40%" src="{{IMAGE_PATH}}/logos/ceph_foundation_logo.png" alt="Ceph Foundation Logo" />
+</a>
+
+University of Michigan Advanced Research Computing is an Associate member of the <a href="https://ceph.com/foundation">Ceph Foundation</a>.
+
 <br style="clear: both"/>
 
 <h4>OSiRIS PIs</h4>

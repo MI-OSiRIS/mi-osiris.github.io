@@ -16,7 +16,7 @@ ATLAS Event Service compute jobs use OSiRIS Ceph S3 gateway to read/write single
     ATLAS and OSiRIS S3 Gateways
 </div>
 
-OSiRIS has been operating as a regular ATLAS event service site since October 2017.  Pictured below is an excerpt from October 2018 showing events processed by the AGLT2 site which uses the OSiRIS ES as storage endpoint.  
+OSiRIS has been operating as a regular ATLAS event service site since October 2017.  Pictured below is an excerpt from October 2018 showing events processed by the U-M AGLT2 site which uses the OSiRIS ES as storage endpoint.  
 
 <div class="imgwrap" style="width: 80%">
 <a href="{{IMAGE_PATH}}/domains/ATLAS-ES-OSiRIS-Events.png">
