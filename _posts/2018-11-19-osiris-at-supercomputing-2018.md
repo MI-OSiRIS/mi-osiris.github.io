@@ -76,11 +76,6 @@ Our demonstration encompassed our storage features, advanced networking, identit
      <span>Storage Features - primary OSD:</span> Taking another angle on optimizing around network latency, we also experimented with setting primary OSD at SC18 for certain storage pools.  Our tests compare the benefits and drawbacks of this approach for clients with low latency to the primary OSD vs those farther away and also compare to the 'default' Ceph setting of randomly allocated primary OSD.  
     </p> 
     </li>
-    <li>
-        <p>
-        <span>Advanced Networking:</span>  The OSiRIS Network Management Abstraction Layer (NMAL) seeks to orchestrate network pathing and quality of service based on real-time feedback.  At SC18 we demonstrated the impact of these intelligent network capabilities on the client experience.
-    </p>
-    </li>
     <li>    
         <p>
         <span>Identity Management and SC18 Test Sandbox:</span>  OSiRIS virtual organizations and the people within those organizations are managed by Internet2 COmanage and a collection of plugins we’ve written to tie together with Ceph storage.  For SC18 we spawned a virtual organization for the show to demonstrate self-service onboarding and credential management.  We then made this <a href="/sc18">storage sandbox</a> available to SCInet clients on the show floor via NFS mount or RGW services.  Our provisioning infrastructure was also involved in the collaboration with SLATE as far as being used to provision storage resources for their virtual organization as we would for any dedicated VO.  
@@ -88,7 +83,7 @@ Our demonstration encompassed our storage features, advanced networking, identit
     </li>
     <li>
         <p>
-            <span>SLATE Collaboration:</span> <a href="http://slateci.io/">SLATE</a> (Services Layer At The Edge) aims to provide a platform for deploying scientific services across national and international infrastructures.  At SC18 they demonstrated their containerized Xcache service using storage (RBD) hosted by OSiRIS using our Ceph cache tier at SC18.  
+            <span><a href="{% post_url 2018-11-15-osiris-and-slate-at-SC18 %}">SLATE Collaboration:</a></span> <a href="http://slateci.io/">SLATE</a> (Services Layer At The Edge) aims to provide a platform for deploying scientific services across national and international infrastructures.  At SC18 they demonstrated their containerized Xcache service using storage (RBD) hosted by OSiRIS using our Ceph cache tier at SC18.  
         </p>
     </li>
 </ul>   

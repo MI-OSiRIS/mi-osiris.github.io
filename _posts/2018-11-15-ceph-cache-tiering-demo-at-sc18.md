@@ -119,8 +119,77 @@ Where we saw much less benefit or difference was with NFS exports.  However our 
 
 A cache tier arrangement like this is not relevant to every use case.  In fact it has significant disadvantages for users who might see higher latency to the cache components but lower latency to the main storage pool.  For the right use case it can make a lot of sense and allow for small storage installations backed by the resources of the entire OSiRIS project.   
 
+<h2>Setup Notes</h2>
 
-  
+When we configured our OSD node at Supercomputing we configured it to be in a separate CRUSH root in the node ceph.conf:
+<pre>
+crush_location = root=supercomputing host=sc-stor-dmd01 rack=crate-1 building=kbh-center member=sc
+</pre>
 
+Our default CRUSH rule starts at root 'default' under which all of the 'members' reside and thus it would have replicated all of our data pools to the new node.  
+
+Given that CRUSH location we then create a rule which allocates PG only to nodes under the supercomputing root:
+<pre>
+ceph osd crush rule create-replicated sc18-hdd-replicated supercomputing osd hdd
+ </pre>
+
+Finally we create our cache tier pool (different pools for each app used above) as an overlay to the normal virtual organization pools (aka COU) created by our COmanage <a href="https://github.com/MI-OSiRIS/comanage-registry/tree/ceph_provisioner/app/AvailablePlugin/CephProvisioner">Ceph Provisioner</a>.  These pools are by default replicated to our 3 main storage sites at UM, MSU, and WSU.
+
+<pre>
+ceph osd pool create cou.SC18.rgw.cache 1024 1024 replicated sc18-hdd-replicated
+ceph osd pool create cou.SC18.fs.cache 1024 1024 replicated sc18-hdd-replicated
+ceph osd pool create cou.SC18.rados.cache 1024 1024 replicated sc18-hdd-replicated
+</pre>
+
+Then we can proceed to add the new tier pools as an overlay to the cou.SC18.xx backing pools in write-back mode.  Just one example is show below:
+
+<pre>
+ceph osd tier add cou.SC18.rgw cou.SC18.rgw.cache
+pool 'cou.SC18.rgw.cache' is now (or already was) a tier of 'cou.SC18.rgw'
+
+ceph osd tier add cou.SC18.rgw cou.SC18.rgw.cache
+pool 'cou.SC18.rgw.cache' is now (or already was) a tier of 'cou.SC18.rgw'
+
+ceph osd tier cache-mode cou.SC18.rgw.cache writeback
+set cache-mode for pool 'cou.SC18.rgw.cache' to writeback
+
+ceph osd tier set-overlay cou.SC18.rgw cou.SC18.rgw.cache
+overlay for 'cou.SC18.rgw' is now (or already was) 'cou.SC18.rgw.cache'
+
+ceph osd pool set cou.SC18.rgw.cache hit_set_type bloom
+set pool 257 hit_set_type to bloom
+</pre>
+
+We then have to set a maximum bytes target for the pool.  I/O to the cache pool will stop until it can flush some data if this target is reached.  We want to set a figure that will avoid over-filling OSD and stopping I/O for that reason.  In this particular context we also have several cache pools being hosted at SC18 so we set a size, taking replicated size into consideration, that will not fill our host even if all the cache pools are at max bytes.  
+<pre>
+ceph osd pool set cou.SC18.rgw.cache target_max_bytes 54975581388800
+set pool 257 target_max_bytes to 54975581388800
+</pre>
+
+Given the above max_bytes we choose dirty and clean flush ratios.  The defaults are 0.4, 0.7, 0.8.  We bumped them up just a little higher to prefer keeping the cache a little more full - our usage at SC18 is not likely to fill it up.  One might choose lower numbers if having available space to cache writes is more important than avoiding a read from the backing pool.  
+
+Of course there's a lot of different use interactions that might decide the best ratios - read heavy, write heavy, sporadic writes or more constant, etc.  Since we're using a cache to overcome latency issues there is a different set of considerations vs using one to overlay faster storage on top of slower.  In fact the cache tier docs note that using a tier for the latter case usually is not going to improve performance very much.   
+
+<pre>
+ceph osd pool set cou.SC18.rgw.cache cache_target_dirty_ratio .5
+set pool 257 cache_target_dirty_ratio to .5
+
+ceph osd pool set cou.SC18.rgw.cache cache_target_dirty_high_ratio .7
+set pool 257 cache_target_dirty_high_ratio to .7
+
+ceph osd pool set cou.SC18.rgw.cache cache_target_full_ratio .9
+set pool 257 cache_target_full_ratio to .9
+</pre>
+
+<h4>More on Cache Tiering</h4>
+
+Ceph cache tier documentation:
+<a href="http://docs.ceph.com/docs/mimic/rados/operations/cache-tiering">http://docs.ceph.com/docs/mimic/rados/operations/cache-tiering</a>
+
+OSiRIS Van Andel Cache Tier setup:
+<a href="/domains/vai.html">https://www.osris.org/domains/vai.html</a>
+
+SC18 SLATE RBD Cache tiering collaboration:
+<a href="{% post_url 2018-11-15-osiris-and-slate-at-SC18 %}">OSiRIS and SLATE at SC18</a>
 
 
