@@ -5,7 +5,7 @@ title: "The influxdb ceph-mgr plugin"
 tags : [ceph, influxdb, articles]
 ---
 {% include JB/setup %}
-My Do, University of Michigan 
+<span style="font-style: italic;">My Do, University of Michigan </span>
 
 The Ceph-mgr plugin, influx, was written to simplify the process of retrieving cluster performance counters and to visualizing them on a dashboard. This influx plugin will periodically retrieve the performance counter and send data points to influxdb where it can be queried by a dashboard such as Grafana. 
 

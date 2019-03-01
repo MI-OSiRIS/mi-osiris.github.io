@@ -73,7 +73,7 @@ Our demonstration encompassed our storage features, advanced networking, identit
     </li>
     <li>
     <p>
-     <span>Storage Features - primary OSD:</span> Taking another angle on optimizing around network latency, we also experimented with setting primary OSD at SC18 for certain storage pools.  Our tests compare the benefits and drawbacks of this approach for clients with low latency to the primary OSD vs those farther away and also compare to the 'default' Ceph setting of randomly allocated primary OSD.  
+     <span><a href="{% post_url 2019-03-01-ceph-osd-site-affinity %}">Storage Features - primary OSD</a>:</span> Taking another angle on optimizing around network latency, we also experimented with setting primary OSD at SC18 for certain storage pools.  Our tests compare the benefits and drawbacks of this approach for clients with low latency to the primary OSD vs those farther away and also compare to the 'default' Ceph setting of randomly allocated primary OSD.  
     </p> 
     </li>
     <li>    
