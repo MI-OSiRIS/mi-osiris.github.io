@@ -12,21 +12,25 @@ How exactly you might implement librados or leverage a rados client is beyond th
 
 Every COU has a pool named <strong>cou.YourOrg.rados</strong>.  As currently implemented every member of your COU can retrieve a key to read and write to this pool.  We can create other pools for you with more limited access.  
 
-If unsure what your COU name is please look under 'My OSiRIS Identity':
 
-<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/Comanage-identity-menu.png" alt="COmanage Identity Menu"/>
+If unsure what your COU name is please look under 'My Profile':
 
-<br />
+<img style="width: 40%" src="{{IMAGE_PATH}}/documentation/Comanage-person-menu.png" alt="COmanage Identity Menu"/>
+
+Look for 'Role Attributes' to determine your COU memberships and names.  Your Rados pool will be cou.NameOfCou.rados.  
 
 <img style="width: 100%" src="{{IMAGE_PATH}}/documentation/Comanage-role-attr.png" alt="COmanage role attributes"/>
 
+To obtain Ceph client credentials look for 'Ceph Credentials' in the COmanage 'person menu' on the upper-right part of the screen:
 
-You can retrieve a Ceph client key with access to your organization default RADOS-only pool from COmanage:
+<img style="width: 40%" src="{{IMAGE_PATH}}/documentation/Comanage-person-menu-ceph.png" alt="COmanage person menu"/>
 
-<img style="width: 40%" src="{{IMAGE_PATH}}/documentation/Comanage-token-menu.png" alt="COmanage token menu"/>
+Your available Ceph Credentials will be listed, and in this case the relevant credential is "Ceph Client Key"
 
-Put this key into your client keyring.  You can also download a file suitable for directly referencing with your client.
+<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/Comanage-ceph-credentials.png" alt="COmanage Ceph Credentials"/>
 
-<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/Comanage-cephkey.png" alt="COmanage ceph key on service token page"/>
+You can retrieve a Ceph client key with access to your organization default RADOS-only pool from this page.  You can also download it as ceph.client.osiris.yourid.keyring.  Typically Ceph clients will look for a keyring following this convention in /etc/ceph.  
+
+All users in the organization have full access to this pool.  We can create additional pools as requested with more restricted access.  
 
 

@@ -40,19 +40,13 @@ You'll be asked to enter some basic information about yourself.  Make sure to en
 
 <img style="width: 80%" src="{{IMAGE_PATH}}/documentation/enrollment/Comanage-user-signup.png" alt="COmanage enrollment information screen"/>
 
-After submitting the form you'll see a confirmation that says 'Petition Created'.  It is normal at this point to see a notice that your identifier is not registered.
-
-<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/enrollment/Comanage-post-enroll.png" alt="COmanage post enrollment message"/>
-
-Check your email at this point and look for a message from Comanage with subject "Invitation to Join OSiRIS" containing a link to verify your enrollment.  
+After submitting the form you'll see a confirmation page.  The instructions there are similar to what is written here.  Check your email at this point and look for a message from Comanage with subject "Invitation to Join OSiRIS" containing a link to verify your enrollment.  
 
 <img style="width: 80%" src="{{IMAGE_PATH}}/documentation/enrollment/confirmationEmail.png" alt="COmanage confirmation email"/>
 
-After you have verified your email an OSiRIS administrator or your virtual organization administrator will approve your enrollment.  Another email will be sent.
+After you have verified your email an OSiRIS administrator or your virtual organization administrator will approve your enrollment.  Another email will be sent.  Once approved you can <a href="https://comanage.osris.org/registry/auth/login" target="_new">login to COmanage</a>.  Depending on how you plan to use OSiRIS there may be no further need for you to interact with COManage.   
 
-<font style="font-weight: bold">IMPORTANT:</font>  At this point you need to login to comanage again to refresh your capabilities.  You can use the link from the comanage "not registered" message or <a href="https://comanage.osris.org/registry/auth/login" target="_new">click here</a> to open the comanage login page in a new window.  
-
-Once logged in there will be a screen to select collaboration.  Please click on 'OSiRIS'.
+When you login to COManage there will be a screen to select collaboration.  Please click on 'OSiRIS'.
 
 <img style="width: 70%" src="{{IMAGE_PATH}}/documentation/enrollment/Comanage-collaborations.png" alt="COmanage collaboration screen"/>
 
@@ -64,8 +58,9 @@ To use OSiRIS CephFS with Globus please see the <a href="globus.html">globus ins
 
 To access OSiRIS S3 please see the <a href="s3.html">S3 instructions</a>.  
 
-To access OSiRIS Rados please see the <a href="rados.html">Rados instructions.  
+To access OSiRIS Rados please see the <a href="rados.html">Rados instructions. 
 
+<a href="/documentation">Full list of OSiRIS documentation</a>
 
 <h3>Who needs to enroll</h3>
 
@@ -90,7 +85,7 @@ If you do not belong to an institution/group which is part of the <a href="https
 
 <h3>What is my COU?</h3>
 
-If unsure what your COU name is please look under the 'person menu' on the upper-right of COmanage and click 'My OSiRIS Identity'.  Under 'Role Attributes' you can see the COU you are in.  You may be in several.  
+If unsure what your COU name is please look under the 'person menu' on the upper-right of COmanage and click 'My Profile'.  Under 'Role Attributes' you can see the COU you are in.  You may be in several.  
 
 <img style="width: 100%" src="{{IMAGE_PATH}}/documentation/Comanage-role-attr.png" alt="COmanage role attributes"/>
 
