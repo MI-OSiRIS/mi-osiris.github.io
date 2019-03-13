@@ -1,7 +1,10 @@
 ---
 layout: default
-title : Enrolling in OSiRIS
+title : Enrolling
+tagline: Joining an OSiRIS Virtual Organization
 header : Enrolling in OSiRIS
+group: documentation
+subnavgroup: documentation
 ---
 {% include JB/setup %}
 OSiRIS is a storage infrastructure for research universities for the state of Michigan.  Users of OSiRIS belong to virtual organizations which are called 'COU' within OSiRIS.  

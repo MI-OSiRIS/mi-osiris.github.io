@@ -31,7 +31,7 @@ p {
   margin: 10px 0 10px 0;
 }
 
-ul { overflow: auto; }
+/* ul { overflow: auto; } */
 
 .light-em {
   color: Teal; 

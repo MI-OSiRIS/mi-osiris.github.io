@@ -1,7 +1,9 @@
 ---
 layout: default
-title : Creating and Uploading an SSH key
-header : Creating and Uploading an SSH key
+title : SSH Keys
+tagline: Creating and Uploading an SSH key
+group: documentation
+subnavgroup: documentation
 ---
 {% include JB/setup %}
 

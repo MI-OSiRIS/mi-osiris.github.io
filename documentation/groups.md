@@ -1,7 +1,10 @@
 ---
 layout: default
-title : OSiRIS Groups
+title : Groups
+tagline: Managing OSiRIS Groups
 header : OSiRIS Groups
+group: documentation
+subnavgroup: documentation
 ---
 {% include JB/setup %}
 

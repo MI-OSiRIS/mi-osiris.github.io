@@ -1,7 +1,9 @@
 ---
 layout: default
-title : Using OSiRIS Ceph RADOS 
+title : RADOS 
 header : Using OSiRIS Ceph RADOS
+group: documentation
+subnavgroup: documentation
 ---
 {% include JB/setup %}
 

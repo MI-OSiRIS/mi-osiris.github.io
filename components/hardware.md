@@ -1,8 +1,9 @@
 ---
 layout: default
-title : OSiRIS Hardware Components
+title : Hardware
 header : OSiRIS Hardware Components
-sidebar: components-menu.html
+group: components
+subnavgroup: components
 ---
 {% include JB/setup %}
 [![Hardware Overview]({{IMAGE_PATH}}/MI-OSiRIS-CephStorage.png){: style="width: 100%"}]({{IMAGE_PATH}}/MI-OSiRIS-CephStorage.png)
@@ -16,3 +17,4 @@ As seen in the architecture overview below we use Git to coordinate configuratio
 
 <img src="{{IMAGE_PATH}}/ProvisionBlock.png" alt="OSiRIS Provisioning Setup">
  
+<a href="/components/management.html">More information on provisioning and management </a>

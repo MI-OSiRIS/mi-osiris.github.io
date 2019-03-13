@@ -60,19 +60,33 @@
       </div>
     </nav>
 
+
+    
     <div class="container">
     	<div class="row">
     		<div class="col-md-2 text-center">
           <div class="well sb">
     		  {% include sidebar.html %}
         </div>
-         {% if page.sidebar %}
-          <div class="well sb">
-              {% include {{ page.sidebar }} %}
-          </div>
-        {% endif %}
+        
     	</div>
     <div class="col-md-9">
+    {% if page.subnavgroup != null %}
+      <nav class="navbar" role="navigation">
+      <div class="">
+          <ul class="nav nav-tabs">
+            {% if page.group == 'navigation' %}
+              <li class="active"> <a href="/{{ page.subnavgroup }}/index.html" class="active">Index</a></li>
+            {% else %}
+              <li> <a href="/{{ page.subnavgroup }}/index.html">Index</a></li>
+            {% endif %}
+            {% assign pages_list = site.pages | sort:"order" %}
+            {% assign group = page.subnavgroup %}
+            {% include JB/pages_list %}
+          </ul>
+      </div>  
+    </nav>
+{% endif %}
       {% if page.title %}
         <div class="page-header"> 
           <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>

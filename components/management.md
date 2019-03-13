@@ -1,8 +1,9 @@
 ---
 layout: default
-title : Puppet, Hiera, and Foreman
+title : Management
 header : Provisioning and configuration management
-sidebar: components-menu.html
+group: components
+subnavgroup: components
 ---
 {% include JB/setup %}
 

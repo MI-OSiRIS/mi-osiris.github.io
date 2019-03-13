@@ -1,7 +1,8 @@
 ---
 layout: default
-title : Using S3 fuse mounts
-header : Using S3 fuse mounts
+title : s3fs-fuse
+tagline: Using S3 Fuse to mount S3 storage
+header : Using S3 fuse 
 ---
 {% include JB/setup %}
 

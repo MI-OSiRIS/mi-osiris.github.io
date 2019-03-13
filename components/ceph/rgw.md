@@ -1,7 +1,6 @@
 ---
 layout: default
 title : Ceph Rados Gateway Tuning
-sidebar: performance-menu.html
 ---
 {% include JB/setup %}
 

@@ -1,7 +1,9 @@
 ---
 layout: default
-title : Using OSiRIS NFS
+title : NFS
 header : Using OSiRIS NFS
+group: documentation
+subnavgroup: documentation
 ---
 {% include JB/setup %}
 

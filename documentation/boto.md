@@ -45,11 +45,10 @@ import boto
 import boto.s3.connection
 ```
 The value for `access_key` needs to be changed to your OSiRIS access key. You can get your access key from OSiRIS COmanage under the 'OSiRIS Tokens' in the menu at upper right of the screen.  The token screen look like the image below.  For more information please have a look at our [S3 Instructions page](s3)
-<img src="{{IMAGE_PATH}}/documentation/enrollment/Comanage-token-generated.png" alt="COmanage token screen after generating S3 token"/>
-The `secret_key` value is ignored, so we keep it as a blank string. We also specify the `osris_host` to our S3 endpoint. We are then able to create a boto connection object to work from.
+
 ```
-access_key = 'CephRgwToken from Comanage'
-secret_key = ''
+access_key = 'access_key from comanage'
+secret_key = 'secret_key from comanage'
 osris_host = 'rgw.osris.org'
 
 # Setup a connection

@@ -1,7 +1,9 @@
 ---
 layout: default
-title : Using Globus with OSiRIS CephFS or S3
-header : Using Globus with OSiRIS CephFS or S3
+title: Globus
+tagline : Using Globus with OSiRIS CephFS or S3
+group: documentation
+subnavgroup: documentation
 ---
 {% include JB/setup %}
 

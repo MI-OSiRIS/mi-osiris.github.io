@@ -1,7 +1,7 @@
 ---
 layout: default
-title : Using s3cmd
-tagline: Open Storage Research Infrastructure
+title : s3cmd
+tagline: Using s3mcd CLI for s3
 header : s3cmd
 ---
 
