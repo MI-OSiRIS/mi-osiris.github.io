@@ -65,4 +65,13 @@ How to use S3 Server Side Encryption with client provided keys.
 
 <h3>Architectural Documentation</h3>
 
-If you are interested in how OSiRIS is structured or in creating a deployment similar to OSiRIS please have a look at the <a href="/components">OSiRIS technology components documentation</a>
+If you are interested in how OSiRIS is structured or in creating a deployment similar to OSiRIS please have a look at the <a href="/components">OSiRIS technology components documentation</a> and OSiRIS white paper.
+
+<h3>OSiRIS Whitepaper</h3>
+
+A reference paper is available for OSiRIS.  The paper provides a general overview of the process and components involved in deploying OSiRIS.  This version of the paper is a public draft eventually planned for submission to relevant publications.   
+
+<a href="/documentation/OSiRIS-Whitepaper.pdf">OSiRIS-Whitepaper.pdf</a>
+
+
+
