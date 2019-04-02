@@ -9,8 +9,11 @@ group: components
 
 <h3>Ceph Deployment</h3>
 
-[![Puppet]({{IMAGE_PATH}}/logos/puppet_logo.png){: style="float: left; margin-right: 10px"}]({{IMAGE_PATH}}/grafana/Collect-Grafana-Ceph-osd-op.png)
-All of our components are deployed and managed with a puppet module forked from a module started by the Openstack group.  The module code is available on Github: [https://github.com/MI-OSiRIS/puppet-ceph](https://github.com/MI-OSiRIS/puppet-ceph)
+<img style="float: left; margin-right: 10px" src="{{IMAGE_PATH}}/logos/puppet_logo.png">
+
+All of our components are deployed and managed with a puppet module forked from a module started by the Openstack group.  
+
+The module code is available on Github: [https://github.com/MI-OSiRIS/puppet-ceph](https://github.com/MI-OSiRIS/puppet-ceph)
 
 The README included in the Github repository covers module usage.  It has been updated to reflect our changes since the fork.  
 

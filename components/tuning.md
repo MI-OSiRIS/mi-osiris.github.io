@@ -13,7 +13,8 @@ Building on the baseline profiles we then apply the following sysctl tunings to 
 ## Ceph Storage Block (OSD) Tuning
 
 These apply only to Ceph storage blocks.  Mainly we are aiming to reduce VM swapping to ensure OSD never have to wait for it.  
-File max is because Ceph tends to open many file descriptors.  This is perhaps less the case in recent versions of Ceph which use an asynchronous messaging thread pool instead of keeping many messaging threads open statically.  
+
+Increasing file max is done because Ceph tends to open many file descriptors.  This is perhaps less the case in recent versions of Ceph which use an asynchronous messaging thread pool instead of keeping many messaging threads open statically.  
 
 <pre>
 fs.file-max = 78718144
@@ -23,7 +24,7 @@ vm.vfs_cache_pressure = 20
 
 ## Network Tuning
 
-These are applied to every machine in OSiRIS.  They are collected from a variety of sources including https://fasterdata.es.net/host-tuning/linux/ and others.  
+These are applied to every machine in OSiRIS.  They are collected from a variety of sources including <a href="https://fasterdata.es.net/host-tuning/linux/">ESNet recommendations</a> and others.  
 
 
 <pre>
