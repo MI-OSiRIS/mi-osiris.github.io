@@ -9,6 +9,8 @@ order: 2
 
 <a href="https://indico.cern.ch/event/765497/contributions/3351202/">Slides</a> from OSiRIS talk presented during <a href="https://www.hepix.org/">HEPiX</a> Spring 2019 at UCSD in San Diego.
 
+<a href="https://www.nitrd.gov/nitrdgroups/images/9/98/Scientific-Data-Lifecycle-Shawn-McKee.pdf">Slides</a> which reference OSiRIS in talk presented by Shawn McKee at Middleware And Grid Interagency Coordination (<a href="https://www.nitrd.gov/nitrdgroups/index.php?title=MAGIC-Meetings-2019">MAGIC</a>) meeting on the scientific data lifecycle. 
+
 <a href="{{ASSET_PATH}}/slides/SC18-Poster.pdf">Poster</a> presented at University of Michigan <a href="https://it.umich.edu/community/michigan-it-symposium/2018/posters">IT Symposium</a> and also displayed during Supercomputing 2018.  
 
 <a href="{{ASSET_PATH}}/slides/SC18-Ceph-BOF-BenMeekhof.pdf">Slides</a> from <a href="https://www.msi.umn.edu/ceph-hpc-environments-sc18">Ceph BOF</a> at <a href="https://sc18.supercomputing.org/presentation/?id=bof103&sess=sess364">Supercomputing 2018</a> in Dallas, TX.  More detailed coverage of SC18 activities is in <a href="{% post_url 2018-11-19-osiris-at-supercomputing-2018 %}">our article about SC18</a>.
