@@ -14,11 +14,13 @@ Since S3cmd needs to be version 2.0 or greater, you can get the most recent vers
 The following config file needs to be placed in the user's home directory. Please update the access key to match that in your comanage account.
 ```
 [default]
-access_key  = YOUR ACCESS KEY HERE
-secret_key  =
-host_base   = rgw.osris.org
-host_bucket = rgw.osris.org/%(bucket)s
-use_https   = True
+access_key   = YOUR ACCESS KEY HERE
+secret_key   =
+host_base    = rgw.osris.org
+host_bucket  = rgw.osris.org/%(bucket)s
+use_https    = True
+signature_v2 = True
+
 ```
 
 <h3>Commands</h3>
