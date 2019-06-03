@@ -6,113 +6,144 @@ header : Using S3 fuse
 ---
 {% include JB/setup %}
 
-Benefits of s3fs-fuse
+s3fs-fuse mounts your OSiRIS S3 buckets as a regular filesystem (File System in User Space - FUSE).  Using it requires that your system have appropriate packages for FUSE installed:  fuse, fuse-libs, or libfuse on Debian based distributions of linux.  
 
-    - Maintains s3 structure, allowing cross-use with other s3 clients.
-    - Easy to use.
+On Mac OSX you can use Homebrew to install s3fs and the fuse dependency.  
 
-Installation of s3fs-fuse
+Detailed instructions for installation or compilation are available from the s3fs Github site:  
+<a href="https://github.com/s3fs-fuse/s3fs-fuse">https://github.com/s3fs-fuse/s3fs-fuse</a>
 
-    - https://github.com/s3fs-fuse/s3fs-fuse
-    - Specific instructions per operating system can be found in the s3fs-fuse git repo.
+s3fs-fuse does not require any dedicated S3 setup or data format.  It can be used in combination with any other S3 compatible client.  
 
-    CentOS 7 Example:
+<h2>OSiRIS s3fs bundle</h2>
 
-        sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
+Linux users have the option of using our s3fs bundle.  The bundle includes s3fs packaged with AppImage so it will work on any Linux distribution.  It also includes a setup script and wrapper script that passes all the correct parameters to s3fuse for mounting.   The wrapper will automatically mount all of your buckets or allow you to specify a single one, and it can also create a new bucket for you.  
 
-        git clone https://github.com/s3fs-fuse/s3fs-fuse.git
-        cd s3fs-fuse
-        ./autogen.sh
-        ./configure
-        make
-        sudo make install
+The latest release is available for <a href="https://github.com/MI-OSiRIS/osiris-bundle/releases/latest/download/osiris-bundle.tgz">download from our Github site</a>.
 
-Configuring s3fs-fuse
+<h3>Example s3fs bundle usage:</h3>
 
-    Setup Credential File
+Download the bundle:
 
-        First, you must generate a service token:
+    curl -L --output osiris-bundle.tgz \
+    https://github.com/MI-OSiRIS/osiris-bundle/releases/latest/download/osiris-bundle.tgz
 
-            - Access your account on https://comanage.osris.org
-            - Navigate to the OSiRIS Tokens page from the account drop-down in the upper right corner.
-            - In the CephRgwToken section, click Generate Token and copy the access key.
+Untar into your home directory:
 
-        Next, we use the generated service token to create a credential file:
+    cd ~ && tar -xvzf osiris-bundle.tgz
 
-            - The file may be named anything desired, however, must only contain the content MYIDENTITY:MYCREDENTIAL
-                
-		- MYIDENTITY is the service token generated in previous steps.
-		- MYCREDENTIAL must exist, but may contain any string which helps identify the key.
-		- Note: be certain to include the colon between the strings, with no additional characters.
+Run the setup tool:
 
-	    - Once created, the credential file should have permissions changed to allow only owner read/write access (600).
+    ~/osiris-bundle/osiris-setup.dist
 
-Mounting with s3fs-fuse
+You will be prompted for your OSiRIS Virtual Organization (aka COU), an S3 userid, and S3 access key / secret.  This information is available from <a href="https://comanage.osris.org">OSiRIS COManage</a>.  Look under your User Menu at the upper right for Ceph Credentials and My Profile to determine your credentials and COU.  
 
-    Mounting from the command line
+Mount your buckets.  If you have not created any the tool will create one for you:
 
-	Example:
+    ~/osiris-bundle/osiris-mount
 
-	s3fs BUCKET s3fs_destination_dir -o passwd_file=s3fs.passwd -o url=https://rgw.osris.org -o use_path_request_style
+When you are finished unmount:
 
-	    s3fs                          - Base command for s3fs command line tool.
-	    BUCKET                        - Name of existing bucket on OSiRIS.
-	    s3fs_destination_dir          - Target directory on which to mount BUCKET.
-	    -o passwd_file=s3fs.passwd    - Absolute or relative path to credential file created previously.
-	    -o url=https://rgw.osris.org  - Address of remote gateway
-	    -o use_path_request_style     - Forces older path style request, used for non-Amazon S3 implementations.
+    ~/osiris-bundle/osiris-mount -u
 
-        Once mounted, you will have access to the BUCKET at the designated s3fs_destination_dir, and can perform normal file operations.
+Optionally you can specify a bucket and have it created:
+    
+    ~/osiris-bundle/osiris-mount -n mycou-anyname
 
-    Mounting automatically with fstab
+Buckets should be all lowercase and must be prefixed with your COU (virtual organization) or the request will be denied. 
 
-	Example:
+<h2>Using s3fs-fuse</h2>
 
-	s3fs#BUCKET /path/to/mountpoint fuse _netdev,allow_other,use_path_request_style,url=https://rgw.osris.org 0 0
+Using the OSiRIS bundle is not required to use s3fs-fuse.  To setup and use manually:  
 
-	    s3fs#BUCKET                - Denotes s3fs is to be used, with BUCKET representing the user bucket to be mounted.
-	    /path/to/mountpoint        - The path to the directory on which BUCKET should be mounted.
-	    fuse                       - Uses fuse as the filesystem type to be mounted.
-	    _netdev                    - Delays mount until networking has been started.
-	    allow_other                - Allows a user other than that which mounted the filesystem to gain access. Recommended, as fstab is processed by the root user.
-	    use_path_request_style     - Forces older path style request, used for non-Amazon S3 implementations.
-	    url=https://rgw.osris.org  - Address of remote gateway.
-	    0                          - Whether the filesystem should be dumped. Use of zero prevents dumps for remote filesystem.
-	    0                          - Order of filesystem check. Use of zero prevents the check on the remote filesystem.
+<ol class="bolditem">
+<li><p>
+    <span>Setup Credential File</span> - s3fs-fuse can use the same credential format as AWS under ${HOME}/.aws/credentials.  You can download a file in this format directly from <a href="https://comanage.osris.org">OSiRIS COmanage</a> or paste your credentials from COmanage into the file:
+</p>
+<pre>
+[default]
+    aws_access_key_id = 82VA...
+    aws_secret_access_key = 665WhlOM...
+</pre>
+<p>
+    You can have multiple blocks with different names.  They can be specified with the -o profile= option to s3fs.  If no profile option is specified the 'default' block is used.  The setup script in the OSiRIS bundle also will create this file based on your input.  
+</p>
+<p>
+    Also be sure your credential file is only readable by you:
+</p>
+<pre>
+chmod 0600 ~/.aws/credentials
+</pre>
+</li>
 
-Performance with s3fs-fuse
+<li>
+    <p>
+        <span>Create a bucket</span> - You must have a bucket to mount.  You can use any client to create a bucket.  For example, if you have installed the <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html">awscli</a> utility:
+    </p>
+<pre>
+aws s3 --endpoint-url https://rgw.osris.org --profile=default mb s3://yourcou-newbucket
+</pre>
 
-    While the performance of S3 mounted filesystems is dependent on many factors, not the least of which being a users local network, users may expect relative stability in the performance of similar operations. The following section will provide an overview of expected performance while utlizing a s3fs-fuse mount from the OSiRIS network.
+<p>
+    Please be sure to prefix your bucket names with the name of your OSiRIS virtual organization (lower case).  This is also referred to as 'COU' in the COmanage interface.  The AWSCLI utility uses the same credential file setup in the previous step.  Other utilities such as <a href="/documentation/s3cmd">s3cmd</a> may require an additional credential file.
+</p>
 
-	Regular block size (1M), single thread
+</li>
+<li>
+    <p>
+    <span>Mount your bucket</span> - The following example mounts yourcou-newbucket at /tmp/s3-bucket.  Unless you specify the -o allow_other option then only you will be able to access the mounted filesystem (be sure you are aware of the security implications if you allow_other - any user on the system can write to the S3 bucket in this case).
+</p>
 
-	    Mean writes - 30MB/s
-	    Mean reads  - 65MB/s
+<pre>
+s3fs yourcou-newbucket /tmp/s3-bucket  \
+    -o profile=default -o use_path_request_style \
+    -o url="https://rgw.osris.org"
+</pre>
 
-	Regular block size (1M), multi-threaded
+<p>
+    Buckets can also be mounted system wide with fstab.  Generally in this case you'll choose to allow everyone to access the filesystem (allow_other) since it will be mounted as root.  As noted, be aware of the security implications as there are no enforced restrictions based on file ownership, etc (because it is not really a POSIX filesystem underneath).  There are nonetheless some workflows where this may be useful.
+</p>
 
-	    Mean writes - 40MB/s
-	    Mean reads  - 65MB/s
+<pre>
+s3fs#BUCKET /path/to/mountpoint fuse _netdev,allow_other,use_path_request_style,profile=default,url=https://rgw.osris.org 0 0
+</pre>
 
-	Small block size (4K), single thread
+</li>
+</ol>
 
-	    Mean writes - 26MB/s
-	    Mean reads  - 55MB/s
+<h2>Performance with s3fs-fuse</h2>
 
-	Small block size (4K), multi-threaded
+The following section will provide an overview of expected performance while utlizing a s3fs-fuse mount from the OSiRIS network.  These figures are for a single client and reflect limitations of FUSE and the underlying HTTP based S3 protocol.  OSiRIS can support large numbers of clients for a higher aggregate throughput.     
 
-	    Mean writes - 31MB/s
-	    Mean reads  - 55MB/s
+<pre>
+Regular block size (1M), single thread
 
-S3 Limitations - https://github.com/s3fs-fuse/s3fs-fuse
+	Mean writes - 30MB/s
+	Mean reads  - 65MB/s
 
-    Random writes or appends to files require rewriting the entire file.
-    Metadata operations such as listing directories have poor performance due to network latency.
-    Eventual consistency can temporarily yield stale data(Amazon S3 Data Consistency Model).
-    No atomic renames of files or directories.
-    No coordination between multiple clients mounting the same bucket.
-    No hard links.
+Regular block size (1M), multi-threaded
 
-References
+	Mean writes - 40MB/s
+	Mean reads  - 65MB/s
 
-    https://github.com/s3fs-fuse/s3fs-fuse - GitHub page for s3fs
+Small block size (4K), single thread
+
+	Mean writes - 26MB/s
+	Mean reads  - 55MB/s
+
+Small block size (4K), multi-threaded
+
+	Mean writes - 31MB/s
+	Mean reads  - 55MB/s
+</pre>
+
+<h2>References</h2>
+
+More detailed instructions for using s3fs-fuse are available on the Github page: 
+<a href="https://github.com/s3fs-fuse/s3fs-fuse">https://github.com/s3fs-fuse/s3fs-fuse</a>
+
+The Amazon AWS CLI tools can be useful for various S3 operations such as making or listing buckets. s3fuse and the AWS util can use the same password credential file.  You must use the proper parameters to point the tool at OSiRIS S3 instead of Amazon:    
+<a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html">AWS CLI installation</a>
+
+The CLI tool 's3cmd' can also be used to manage buckets, etc:  <a href="/documentation/s3cmd">OSiRIS Documentation on s3cmd</a>
+

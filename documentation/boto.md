@@ -1,7 +1,7 @@
 ---
 layout: default
 title : Using Python Boto
-tagline: Open Storage Research Infrastructure
+tagline: OSiRIS S3 in Python Scripts
 header : Python Boto
 ---
 
@@ -29,36 +29,36 @@ header : Python Boto
 - [More Information](#moreInfo)
 
 <a name="gettingStarted" />
-<h3>Getting started with ACL and boto</h3>
+<h3>Getting started with boto</h3>
 
-1. Install boto with pip: `pip install boto`
-2. Create (if required) and get your [access key](s3).
-3. Modify the example code to use your own access key.
-4. Run the example code to test that you are able to connect to the S3 endpoint.
+You'll first need to install boto with pip: `pip install boto`
+
+There are also python-boto packages available for most Linux distributions.  
+
+There are two boto versions:  boto2 and boto3.  Most of these examples are targeted at boto2.  If you prefer to use boto 3 change the command above to 'pip install boto3'.     
+
+You can get your S3 access key and secret key from <a href="https://comanage.osris.org">OSiRIS COmanage</a> under the profile the menu at upper right of the screen.  For more information please have a look at our [S3 Instructions page](s3).  You will need these credentials to run any of the examples below.
 
 <a name="newConn" />
-<h3>Creating a connection to OSRIS</h3>
+<h3>Creating a connection to OSiRIS</h3>
 Using boto in a python script requires you to import both boto and boto.s3.connection as follows:
 ```
 #!/usr/bin/env python
 import boto
 import boto.s3.connection
-```
-The value for `access_key` needs to be changed to your OSiRIS access key. You can get your access key from OSiRIS COmanage under the 'OSiRIS Tokens' in the menu at upper right of the screen.  The token screen look like the image below.  For more information please have a look at our [S3 Instructions page](s3)
 
-```
 access_key = 'access_key from comanage'
 secret_key = 'secret_key from comanage'
 osris_host = 'rgw.osris.org'
 
 # Setup a connection
 conn = boto.connect_s3(aws_access_key_id = access_key,
-        aws_secret_access_key = secret_key,
-        host = osris_host,
-	is_secure = True,
-	port = 443,
-        calling_format = boto.s3.connection.OrdinaryCallingFormat(),
-        )
+  aws_secret_access_key = secret_key,
+  host = osris_host,
+  is_secure = True,
+  port = 443,
+  calling_format = boto.s3.connection.OrdinaryCallingFormat(),
+)
 ```
 
 <a name="buckets" />
@@ -67,10 +67,10 @@ conn = boto.connect_s3(aws_access_key_id = access_key,
 The following example gets a list of Buckets that you own. It will print the bucket name and the creation date of each bucket.
 ```
 for bucket in conn.get_all_buckets():
-        print "{name}\t{created}".format(
-                name = bucket.name,
-                created = bucket.creation_date,
-        )
+  print "{name}\t{created}".format(
+    name = bucket.name,
+    created = bucket.creation_date,
+  )
 ```
 The result should look something like this:
 ```
@@ -83,16 +83,17 @@ mahbuckat3   2011-04-21T18:07:18.000Z
 <h3>Creating a bucket</h3>
 Creating a new bucket is simple:
 ```
-bucket = conn.create_bucket('testcou-my-new-bucket')
+bucket = conn.create_bucket('mycou-bucket')
 ```
-Please note that buckets on OSRIS should start with your COU. The COU will be after your user id. In the example below, it will be `testcou`.
 
-<img style="width: 80%" src="{{IMAGE_PATH}}/documentation/s3/Comanage-s3user.png" alt="COmanage S3 user"/>
+Please note that buckets on OSRIS should start with your COU or 'virtual organization' in lowercase.   You can find this information under your Profile menu (upper-right after login) in <a href="https://comanage.osris.org">OSiRIS COmanage</a>.  
+
 
 <a name="deleteBucket" />
 <h3>Deleting a bucket</h3>
-Deleting a bucket is also simple:
+Deleting a bucket is also simple.  
 ```
+bucket = conn.get_bucket('mycou-bucket')
 conn.delete_bucket(bucket.name)
 ```
 Note that the bucket must be empty in order to delete it. There is no way to force a non-empty bucket to be deleted.
@@ -101,6 +102,7 @@ Note that the bucket must be empty in order to delete it. There is no way to for
 <h3>Creating an object</h3>
 This creates a file `hello.txt` with the string `Hello World!`
 ```
+bucket = conn.get_bucket('mycou-bucket')
 key = bucket.new_key('hello.txt')
 key.set_contents_from_string('Hello World!')
 ```
@@ -110,17 +112,18 @@ key.set_contents_from_string('Hello World!')
 `bucket.list()` gets a list of objects in the bucket. The example below prints out the name, file size, and last modified date of each object.
 ```
 for key in bucket.list():
-        print "{name}\t{size}\t{modified}".format(
-                name = key.name,
-                size = key.size,
-                modified = key.last_modified,
-                )
+  print "{name}\t{size}\t{modified}".format(
+    name = key.name,
+    size = key.size,
+    modified = key.last_modified,
+    )
 ```
 <a name="objects">
 <a name="createObject" />
 <h3>Creating an object</h3>
 This creates a file `hello.txt` with the string `Hello World!`
 ```
+bucket = conn.get_bucket('mycou-bucket')
 key = bucket.new_key('hello.txt')
 key.set_contents_from_string('Hello World!')
 ```
@@ -129,6 +132,7 @@ key.set_contents_from_string('Hello World!')
 <h3>Change an object's ACL</h3>
 The ACL can be assigned to a file as shown below:
 ```
+bucket = conn.get_bucket('mycou-bucket')
 public_hello = bucket.get_key('hello.txt')
 public_hello.set_canned_acl('public-read')
 private_hello = bucket.get_key('private_hello.txt')
@@ -137,6 +141,7 @@ private_hello.set_canned_acl('private')
 <a name="bucketAcl" />
 A similar process can be used for assigning an ACL to a bucket:
 ```
+bucket = conn.get_bucket('mycou-bucket')
 bucket.set_canned_acl('public-read')
 ```
 Information on bucket ACLs can be found [here](http://boto3.readthedocs.io/en/latest/guide/s3-example-access-permissions.html)
@@ -145,6 +150,7 @@ Information on bucket ACLs can be found [here](http://boto3.readthedocs.io/en/la
 <h3>Delete an object</h3>
 This deletes the object hello.txt
 ```
+bucket = conn.get_bucket('mycou-bucket')
 bucket.delete_key('hello.txt')
 ```
 
@@ -152,6 +158,7 @@ bucket.delete_key('hello.txt')
 <h3>Download an object to a file</h3>
 This example downloads the object hello.txt and saves it in /tmp.
 ```
+bucket = conn.get_bucket('mycou-bucket')
 key = bucket.get_key('hello.txt')
 key.get_contents_to_filename('/tmp/hello.txt')
 ```
@@ -160,6 +167,7 @@ key.get_contents_to_filename('/tmp/hello.txt')
 <h3>Generate a signed or unsigned object download URL</h3>
 An unsigned download URL works when a key is publically readable.
 ```
+bucket = conn.get_bucket('mycou-bucket')
 hello_key = bucket.get_key('hello.txt')
 hello_url = hello_key.generate_url(0, query_auth=False)
 print hello_url
@@ -257,7 +265,7 @@ Then you can set the policy with `bucket.set_policy(json_policy % bucket.name)`
 
 Most of these examples are adapted from the docs linked above at ceph.com.  
 
-These examples and other examples at ceph.com refer to boto2 but you may be using the most current boto3.  Docs for that version are at the URL below:
+These examples and other examples at ceph.com refer to boto2 but you may be using boto3.  Docs for that version are at the URL below:
 
 <a href="http://boto3.readthedocs.io/en/latest/guide/s3-examples.html">S3 Docs for Boto3</a>
 

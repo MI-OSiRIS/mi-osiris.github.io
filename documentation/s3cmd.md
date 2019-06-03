@@ -7,11 +7,31 @@ header : s3cmd
 
 {% include JB/setup %}
 
-<h3>Obtaining S3cmd</h3>
-Since S3cmd needs to be version 2.0 or greater, you can get the most recent version on [SourceForge](https://sourceforge.net/projects/s3tools/files/s3cmd/). Not all package managers will have the current version. To check the version your system has, you can run `s3cmd --version`.
+<h2>What is s3cmd</h2>
+
+S3cmd is a command line tool for interacting with S3 storage.  It can create buckets, download/upload data, modify bucket ACL, etc.  It will work on Linux or MacOS.  Like many Linux tools we would also expect it to work with WSL (Windows Subsystem for Linux) but we have not specifically verified that.  
+
+<h3>Installing S3cmd</h3>
+
+S3cmd packages are available from the EPEL repository for RHEL variants, or from the Debian base repositories.  For MacOS you will have to download below or use PIP.
+
+If you want to be sure to have the latest version you can download it from their site:  <a href="https://s3tools.org/download">https://s3tools.org/download</a>.
+
+You can also use Python PIP:
+<pre>
+# system wide...
+
+sudo pip install s3cmd
+
+# Or install for user only (required on MacOS, cannot modify system python)
+# For MacOS add ~/Library/Python/2.7/bin to PATH 
+
+pip install --user s3cmd
+</pre>
+
 
 <h3>Config file</h3>
-The following config file needs to be placed in the user's home directory. Please update the access key to match that in your comanage account.
+Create a new file ~/.s3cfg with the following contents.  Access key and secret key are available from <a href="https://comanage.osris.org">OSiRIS COmanage</a>.  
 ```
 [default]
 access_key   = YOUR ACCESS KEY HERE
@@ -20,8 +40,12 @@ host_base    = rgw.osris.org
 host_bucket  = rgw.osris.org/%(bucket)s
 use_https    = True
 signature_v2 = True
-
 ```
+
+The file contains credential information so be sure it is readable only by you:
+<pre>
+chmod 0600 ~/.s3cfg
+</pre>
 
 <h3>Commands</h3>
 All the s3cmd options can be found by running `s3cmd --help` or looking on the [s3tools usage](http://s3tools.org/usage) page. These options can be prefexed with `s3cmd` or with the encryption shown below.
@@ -43,7 +67,7 @@ s3cmd \
 > --add-header=x-amz-server-side-encryption-customer-algorithm:AES256 \
 > --add-header=x-amz-server-side-encryption-customer-key:"$key" \
 > --add-header=x-amz-server-side-encryption-customer-key-MD5:"$key_md5" \
-> put test.txt s3://testBucket
+> put test.txt s3://mycou-bucket
 ```
 In this example, we are uploading a file to a bucket. The commands on the last line can be changed to work with any bucket or file. To create the two variables required, the following commands can be run:
 ```
@@ -55,53 +79,53 @@ key_md5=$(echo -n $secret | openssl dgst -md5 -binary | base64)
 <h3>Examples</h3>
 Creating a bucket:
 ```
-$ s3cmd mb s3://test_TESTBUCKET
-Bucket 's3://test_TESTBUCKET/' created
+$ s3cmd mb s3://mycou-bucket
+Bucket 's3://mycou-bucket/' created
 ```
 
 Listing buckets:
 ```
 $ s3cmd ls
-2018-06-01 21:07  s3://test_TESTBUCKET
+2018-06-01 21:07  s3://mycou-bucket
 ```
 
 Removing buckets:
 ```
-$ s3cmd rb s3://test_TESTBUCKET
-Bucket 's3://test_TESTBUCKET/' removed
+$ s3cmd rb s3://mycou-bucket
+Bucket 's3://mycou-bucket/' removed
 ```
 
 Uploading a file:
 ```
 $ cat test.txt 
 Hello World!
-$ s3cmd put test.txt s3://test_TESTBUCKET
-upload: 'test.txt' -> 's3://test_TESTBUCKET/test.txt'  [1 of 1]
+$ s3cmd put test.txt s3://mycou-bucket
+upload: 'test.txt' -> 's3://mycou-bucket/test.txt'  [1 of 1]
  13 of 13   100% in    0s    77.87 B/s  done
 ```
 A directory of files can be uploaded at once by adding the `--recursive` flag:
 ```
-$ s3cmd --recursive put test_files/ s3://testBucket
-upload: 'test_files/boto.pdf' -> 's3://testBucket/boto.pdf'  [1 of 4]
+$ s3cmd --recursive put test_files/ s3://mycou-bucket
+upload: 'test_files/boto.pdf' -> 's3://mycou-bucket/boto.pdf'  [1 of 4]
  3118319 of 3118319   100% in    0s     3.80 MB/s  done
-upload: 'test_files/boto_keystring_example' -> 's3://testBucket/boto_keystring_example'  [2 of 4]
+upload: 'test_files/boto_keystring_example' -> 's3://mycou-bucket/boto_keystring_example'  [2 of 4]
  32 of 32   100% in    0s   148.15 B/s  done
-upload: 'test_files/s3cfg' -> 's3://testBucket/s3cfg'  [3 of 4]
+upload: 'test_files/s3cfg' -> 's3://mycou-bucket/s3cfg'  [3 of 4]
  143 of 143   100% in    0s  1264.54 B/s  done
-upload: 'test_files/test.txt' -> 's3://testBucket/test.txt'  [4 of 4]
+upload: 'test_files/test.txt' -> 's3://mycou-bucket/test.txt'  [4 of 4]
  12 of 12   100% in    0s   112.39 B/s  done
 ```
 
 Listing files:
 ```
 $ s3cmd la
-2018-06-01 21:17        13   s3://test_TESTBUCKET/test.txt
+2018-06-01 21:17        13   s3://mycou-bucket/test.txt
 ```
 
 Downloading a file:
 ```
-$ s3cmd get s3://test_TESTBUCKET/test.txt test_download.txt
-download: 's3://test_TESTBUCKET/test.txt' -> 'test_download.txt'  [1 of 1]
+$ s3cmd get s3://mycou-bucket/test.txt test_download.txt
+download: 's3://mycou-bucket/test.txt' -> 'test_download.txt'  [1 of 1]
  13 of 13   100% in    0s   120.21 B/s  done
 $ cat test_download.txt 
 Hello World!
@@ -109,8 +133,8 @@ Hello World!
 
 Deleting a file:
 ```
-$ s3cmd rm s3://test_TESTBUCKET/test.txt
-delete: 's3://test_TESTBUCKET/test.txt'
+$ s3cmd rm s3://mycou-bucket/test.txt
+delete: 's3://mycou-bucket/test.txt'
 ```
 A file can also be deleted with the `del` command:
 ```
@@ -119,10 +143,10 @@ delete: 's3://testcou-testfile2/test.txt'
 ```
 A series of files can be delted by listing all of the files you want to delete:
 ```
-$ s3cmd rm s3://testBucket/boto.pdf s3://testBucket/boto_keystring_example s3://testBucket/s3cfg s3://testBucket/test.txtdelete: 's3://testBucket/boto.pdf'
-delete: 's3://testBucket/boto_keystring_example'
-delete: 's3://testBucket/s3cfg'
-delete: 's3://testBucket/test.txt'
+$ s3cmd rm s3://mycou-bucket/boto.pdf s3://mycou-bucket/boto_keystring_example s3://mycou-bucket/s3cfg s3://mycou-bucket/test.txtdelete: 's3://mycou-bucket/boto.pdf'
+delete: 's3://mycou-bucket/boto_keystring_example'
+delete: 's3://mycou-bucket/s3cfg'
+delete: 's3://mycou-bucket/test.txt'
 ```
 
 <h3>More Information</h3>
