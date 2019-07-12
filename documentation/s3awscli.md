@@ -49,6 +49,7 @@ Alternately, if you download the <a href="https://github.com/MI-OSiRIS/osiris-bu
 aws_access_key_id = ABC234
 aws_secret_access_key = Abc123
 </pre>  
+<span class='light-em'>Note: </span> If you used the OSiRIS setup utility (osiris-setup.dist) to configure a credentials file then the profile will be your S3 username, not 'default'.  You will have to specify this in the --profile= option.  
 </li>
 <li>
     <p>

@@ -36,7 +36,7 @@ Run the setup tool:
 
     ~/osiris-bundle/osiris-setup.dist
 
-You will be prompted for your OSiRIS Virtual Organization (aka COU), an S3 userid, and S3 access key / secret.  This information is available from <a href="https://comanage.osris.org">OSiRIS COManage</a>.  Look under your User Menu at the upper right for Ceph Credentials and My Profile to determine your credentials and COU.  
+You will be prompted for your OSiRIS Virtual Organization (aka COU), an S3 userid, and S3 access key / secret.  This information is available from <a href="https://comanage.osris.org">OSiRIS COmanage</a>.  Look under your User Menu at the upper right for Ceph Credentials and My Profile to determine your credentials and COU.  
 
 Mount your buckets.  If you have not created any the tool will create one for you:
 
