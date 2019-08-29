@@ -7,7 +7,7 @@ order: 2
 ---
 {% include JB/setup %}
 
-OSiRIS REU student <a href="{{ASSET_PATH}}/slides/OSiRIS-REU-Poster-MID-SURE.pdf">poster</a> presented at the <a href="https://urca.msu.edu/mid-sure">Mid-SURE</a> event to summarize research experience in the <a href="https://icer-acres.msu.edu">iCER ACRES</a> program at MSU.   
+OSiRIS REU student <a href="{{ASSET_PATH}}/slides/OSiRIS-REU-Poster-MID-SURE.pdf">poster</a> presented at the <a href="https://urca.msu.edu/mid-sure">Mid-SURE</a> event to summarize research experience in the <a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a> program at MSU. 
 
 <a href="https://indico.cern.ch/event/765497/contributions/3351202/">Slides</a> from OSiRIS talk presented during <a href="https://www.hepix.org/">HEPiX</a> Spring 2019 at UCSD in San Diego.
 

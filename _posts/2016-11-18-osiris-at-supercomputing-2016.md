@@ -41,7 +41,7 @@ We went to Supercomputing with these goals in mind:
 
 Demonstrate our ability to quickly deploy additional OSiRIS sites.  At our booth we presented a talk including a live demonstration of spinning up a new storage block (<a href="{% post_url 2016-11-15-provisioning-osiris-at-sc16 %}">article</a> and <a href="{{ASSET_PATH}}/slides/SC16-Booth-Talk.pdf">slides</a>).
 
-Demonstrate and test the usability of OSiRIS with a higher latency site involved (confirming our <a href="/performance/latency">formal test results</a>).
+Demonstrate and test the usability of OSiRIS with a higher latency site involved (confirming our <a href="/components/ceph/latency.html">formal test results</a>).
 
 Test and gather data on using Ceph cache tiers to help overcome latency issues.  This test features LIQID NVMe drives installed in a pair of 100Gb capable hosts from 2CRSI in our rack at SC 
 (<a href="{% post_url 2016-11-16-ceph-cache-tiering-with-liqid-nvme-at-sc16 %}">article</a>).

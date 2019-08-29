@@ -55,10 +55,8 @@ University of Michigan Advanced Research Computing is an Associate member of the
 | Ezra Kissel | | | | IU Lead Research Scientist |
 | Jeremy Musser | | | | IU Grad Student Engineer |
 | Alex Shroyer | | | | IU Engineer | 
-| Grant Skipper | | | | IU Grad Student Engineer | 
 | Jeff Goeke-Smith | | | | MSU Network Engineer |
 | Andy Keen | | | | MSU Lead Engineer |
-| Charlie Miller | | | | MSU Engineer |
 | Nick Rahme | | | | MSU Engineer | 
 | Jerome Kinlaw | | | | UM Engineer | 
 | Dan Kirkland | | | | UM Network Engineer | 
@@ -67,16 +65,25 @@ University of Michigan Advanced Research Computing is an Associate member of the
 | Carlo Musante | | | | WSU Network Engineer |
 | Michael Thompson | | | | WSU Lead Engineer |
 
-<h4>Former OSiRIS Staff</h4>
+<h4>OSiRIS Undergraduate Students</h4>
+
+| Victoria Cao | | | | MSU REU Student (<a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a>) |
+| William Dixon | | | | MSU REU Student (<a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a>) |
+| Raul Dutta | | | | UM Student Engineer |
+
+<h4>Former OSiRIS Students and Staff</h4>
 
 These individuals contributed to OSiRIS but are not currently involved in the project.
 
+| Grant Skipper | | | | IU Grad Student Engineer | 
+| Charlie Miller | | | | MSU Engineer |
 | Jayashree Candadai | | | | IU Principal Research Engineer |
 | Miao Zhang | | | | IU Grad Student Engineer |
 | Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
 | My Do | | | | UM Student Engineer |  
 | Lillian Huang | | | | UM Student Engineer |
 | Ryan Marshall | | | | UM Student Engineer |
+| Charlie Monk | | | | UM Student Engineer | 
 | Keane Wolter | | | | UM Engineer |
 | Michael Gregorowicz | | | | WSU Systems Architect |
 

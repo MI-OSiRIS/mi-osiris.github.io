@@ -2,6 +2,8 @@
 layout: default
 title: Performance
 header : Ceph Network Latency 
+redirect_from: 
+ - /performance/latency
 ---
 {% include JB/setup %}
 
