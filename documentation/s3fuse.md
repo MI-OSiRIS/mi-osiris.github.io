@@ -142,7 +142,9 @@ Small block size (4K), multi-threaded
 More detailed instructions for using s3fs-fuse are available on the Github page: 
 <a href="https://github.com/s3fs-fuse/s3fs-fuse">https://github.com/s3fs-fuse/s3fs-fuse</a>
 
-The Amazon AWS CLI tools can be useful for various S3 operations such as making or listing buckets. s3fuse and the AWS util can use the same password credential file.  You must use the proper parameters to point the tool at OSiRIS S3 instead of Amazon:    
+For a graphical interface to S3 storage you can use <a href="/documentation/cyberduck.html">Cyberduck</a>.  You can use Cyberduck to create/list/delete buckets, transfer data, and work with bucket ACLs.   
+
+The Amazon AWS CLI tools can be used for bucket operations and to transfer data. S3fuse and the AWS util can use the same password credential file.  You must use the proper parameters to point the tool at OSiRIS S3 instead of Amazon:    
 <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html">AWS CLI installation</a>
 
 The CLI tool 's3cmd' can also be used to manage buckets, etc:  <a href="/documentation/s3cmd">OSiRIS Documentation on s3cmd</a>
