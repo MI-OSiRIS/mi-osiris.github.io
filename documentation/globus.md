@@ -32,7 +32,7 @@ Send to osiris-help@umich.edu the "Certificate Subject" given to you by CIlogon 
 /DC=org/DC=cilogon/O=YourOrg/CN=Your Name A12345
 </pre>
 
-Once we have configured your account for Globus access login and transfer data at <a href="https://www.globus.org/app/transfer">globus.org</a>. 
+Once we have configured your account for Globus access login and transfer data at <a href="https://app.globus.org/file-manager">globus.org</a>. 
 
 Search for 'osiris' and you should see our endpoints:  
 
