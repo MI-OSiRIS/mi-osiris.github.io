@@ -2,7 +2,7 @@
 layout: post
 category : article
 tagline: "Hardware racked at UM MACC"
-tags : [um, hardware, installation ]
+tags : [ hardware, storage ]
 ---
 {% include JB/setup %}
 
