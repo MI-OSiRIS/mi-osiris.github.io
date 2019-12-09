@@ -7,23 +7,17 @@ subnavgroup: documentation
 ---
 {% include JB/setup %}
 
-OSiRIS can provide access to your CephFS space via our NFS servers if you are on the MSU or UM campus.  Please email <a href="mailto:osiris-help@umich.edu">osiris-help@umich.edu</a> if interested in using OSiRIS via NFS so we can setup the necessary 'user mapping' from your UMICH or other local user to your OSiRIS identity.  Once configured, files owned by your OSiRIS identity will show as owned by your local (non-osiris) identity when listed in the NFS mount.  Groups will still show as 'nobody' but actual group permissions will be respected as determined by your OSiRIS group memberships.  We can also map selected OSiRIS groups to local groups if there is an appropriate correlation.  
+OSiRIS can provide access to your CephFS space via our NFS servers if you are on campus at MSU, UM, or WSU.  Please email <a href="mailto:osiris-help@umich.edu">osiris-help@umich.edu</a> if interested in using OSiRIS via NFS so we can setup the necessary 'user mapping' from your local user to your OSiRIS identity.  Once configured, files owned by your OSiRIS identity will show as owned by your local (non-osiris) identity when listed in the NFS mount.  Groups will still show as 'nobody' but actual group permissions will be respected as determined by your OSiRIS group memberships.  We can also map selected OSiRIS groups to local groups if there is an appropriate correlation.  
 
-<h2>UMICH</h2>
+<h2>HPCC at MSU</h2>
 
-OSiRIS storage is mounted on flux-login nodes at /nfs/osiris (flux-login.arc-ts.umich.edu).  You will automatically have the requisite Kerberos credentials when you login.  Your virtual organization space will be directly under this path.  For example:  /nfs/osiris/mycouname <br /> 
+HPCC users at MSU can access OSiRIS storage already mounted on globus-01.hpcc.msu.edu at /mnt/cephfs.  After login you will need to run 'kinit' and enter your password to manually obtain Kerberos credentials.  
 
-You can copy from here to other paths mounted on flux-login, or work with the data directly for testing or proof of concept (please do not run compute intensive jobs on the login nodes).  
-
-<h2>MSU</h2>
-
-HPCC users at MSU can access OSiRIS storage on globus-01.hpcc.msu.edu at /mnt/cephfs.  After login you will need to run 'kinit' and enter your password to manually obtain Kerberos credentials.
-
-<h2>Mounting on your own client</h2>
+<h2>Client Configuration</h2>
 
 Mounting NFS requires Kerberos credentials.  Your client will require a keytab and users of the space require credentials to verify their identity.
 
-If interested in mounting NFS on your client please send an email to <a href="mailto:osiris-help@umich.edu">osiris-help@umich.edu</a> and OSiRIS admins can obtain a keytab for your client as well as assist with configuration.  We also have to configure a 'user mapping' to map your local system user to your OSiRIS identity.  It is not strictly required but if not setup then your files will all show as owned by the NFS 'nobody' user.  
+If interested in mounting NFS on your client OSiRIS admins can obtain a keytab for your client as well as assist with configuration.  We also have to configure a 'user mapping' to map your local system user to your OSiRIS identity.  It is not strictly required but if not setup then your files will all show as owned by the NFS 'nobody' user.  
 
 For reference, the NFS servers are: <br />
 um-nfs01.osris.org <br />
