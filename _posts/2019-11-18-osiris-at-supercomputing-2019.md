@@ -40,10 +40,18 @@ Getting everything connected and ready to go!
 <a href="{{IMAGE_PATH}}/sc19/scinet-cables.jpg">
     <img style="width: 100%" src="{{IMAGE_PATH}}/sc19/scinet-cables.jpg" alt="SCINet NOC" />
 </a>
-SCInet provides all conference networking.  Somewhere in here is our OSiRIS 100Gb fiber path back to Michigan.</div>
+SCInet provides all conference networking.  Somewhere in here is our OSiRIS 100Gb fiber path back to Michigan.
+</div>
 <br style="clear:both" />
 
 <h2>OSiRIS SC19 Storage and Network Demos</h2>
+
+<div class="imgwrap rf"  style="width: 32%; padding-bottom: 50px;">
+<a href="{{IMAGE_PATH}}/sc19/osiris-nre-booth-sign.jpg">
+    <img style="width: 100%;" src="{{IMAGE_PATH}}/sc19/osiris-nre-booth-sign.jpg" alt="OSiRIS NRE Poster on SCINet NOC booth" />
+</a>
+OSiRIS NRE demo poster on SCINet NOC booth
+</div>
 
 Our demonstration this year was focused on stress-testing Ceph cache tiering for use in responsive, dynamic deployments.  We know from <a href="{% post_url 2016-11-18-osiris-at-supercomputing-2016 %}">previous</a> <a href="{% post_url 2018-11-19-osiris-at-supercomputing-2018 %}">years</a> that a cache tier can be use to provide IO boosts to geographically local clients.  We also know that it becomes a disadvantage for any clients with high latency to the cache.  What if we could create a more responsive system for managing caches which spins them up on demand and then removes them once the demand has moved to a different location?  That was our goal this year:   To find out how our Ceph cluster will respond to rapidly deploying, filling, draining, and removing cache tiers at SC19.  
 
@@ -78,10 +86,11 @@ The testing we're doing here will inform work on a proof-of-concept cache tier m
 
 <h2>Open Source Networking:  A Learning Experience</h2>
 
-<div class="imgwrap lf"  style="width: 32%">
+<div class="imgwrap lf"  style="width: 32%; padding-bottom: 10px">
 <a href="{{IMAGE_PATH}}/sc19/wedge-switch-closeup.jpg">
     <img style="width: 100%; margin: 10px" src="{{IMAGE_PATH}}/sc19/wedge-switch-closeup.jpg" alt="Wedge 100 switch" />
 </a>
+Wedge 100BF ONIE switch installed in our SC19 booth rack
 </div>
 
 Open platform switches running open source software are an exciting development in networking architecture.  For Supercomputing and for our continued experimentation an Edge-Core <a href="https://www.edge-core.com/productsInfo.php?cls=1&cls2=5&cls3=181&id=335">Wedge 100BF-32X</a> switch was acquired.  This switch can run a variety of open network operating systems compatible with the Open Network Install Environment (ONIE).  There are many available switch hardware platforms with this capability.  For the switch OS we chose <a href="https://azure.github.io/SONiC">SONiC</a>.  
