@@ -15,6 +15,8 @@ Detailed instructions for installation or compilation are available from the s3f
 
 s3fs-fuse does not require any dedicated S3 setup or data format.  It can be used in combination with any other S3 compatible client.  
 
+*The s3fs-fuse mount location must not be mounted on a Spectrum Scale (GPFS) mount, like /mnt/home on MSU's HPCC.*
+
 <h2>OSiRIS s3fs bundle</h2>
 
 Linux users have the option of using our s3fs bundle.  The bundle includes s3fs packaged with AppImage so it will work on any Linux distribution.  It also includes a setup script and wrapper script that passes all the correct parameters to s3fuse for mounting.   The wrapper will automatically mount all of your buckets or allow you to specify a single one, and it can also create a new bucket for you.  
