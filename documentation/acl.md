@@ -7,7 +7,7 @@ subnavgroup: documentation
 ---
 {% include JB/setup %}
 
-The OSiRIS filesystem manages file permissions using access control lists or acl's to further protect files and directories. Thus, standard unix file permissions might not be enough to manage file access for users/groups.
+The OSiRIS filesystem manages file permissions using access control lists or ACL's to further protect files and directories. Thus, standard UNIX file permissions might not be enough to manage file access for users/groups.
 
 <strong> Why do we need FACL(s)? </strong>
 
@@ -65,7 +65,7 @@ The above commands will get the access control lists for all subdirectories and 
 
 <strong> Restoring the FACL(s) </strong>
 
-When you restore the files in /osiris directory, you would have to restore the FACLs associated with the files in that direcotry. To do that use the FACL backup file osiris_facl along with the –restore option :
+When you restore the files in /osiris directory, you would have to restore the FACLs associated with the files in that directory. To do that use the FACL backup file osiris_facl along with the –restore option :
 <pre>
 setfacl --restore=osiris_facl
 </pre>
