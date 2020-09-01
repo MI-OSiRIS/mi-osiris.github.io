@@ -7,7 +7,17 @@ order: 2
 ---
 {% include JB/setup %}
 
-OSiRIS REU student <a href="{{ASSET_PATH}}/slides/OSiRIS-REU-Poster-MID-SURE.pdf">poster</a> presented at the <a href="https://urca.msu.edu/mid-sure">Mid-SURE</a> event to summarize research experience in the <a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a> program at MSU. 
+<a href="{{ASSET_PATH}}/slides/OSiRIS-UM-CoP-slides.pdf">Slides</a> from OSiRIS: Project Update presented by  Shawn McKee at  UM Storage Community of Practice (CoP) on April 29,2020.
+
+<a href="{{ASSET_PATH}}/slides/ARCTS-LunchTalk-Dec2019.pdf">Slides</a> from OSiRIS Overview for ARC-TS and Unit IT presented by Ben Meekhof at the ARC-TS December 2019 Lunchtalk.
+
+Applying OSiRIS NMAL to Network Slices on SLATE <a href="{{ASSET_PATH}}/slides/Applying-OSiRIS-NMAL-to-Network-Slices-on-SLATE.pdf">Poster</a> presented at <a href="http://chep2019.org/">CHEP 2019</a> in Adelaide, Australia on November 5,2019.
+
+<a href="{{ASSET_PATH}}/slides/CHEP2019-OSiRIS.pdf">Slides</a> from OSiRIS: A Distributed Storage and Networking Project Update presented by Shawn Mckee at <a href="http://chep2019.org/">CHEP 2019</a> in Adelaide, Australia on November 4,2019.
+
+<a href="{{ASSET_PATH}}/slides/GRP-OSIRIS-Caching-2019.pdf">Slides</a> from Data Lakes, Data Caching for Science and the OSIRIS Distributed Storage System presented by Shawn Mckee at <a href="http://grp-workshop-2019.ucsd.edu/">The 1st Global Research Platform Workshop</a> on September 18,2019.
+
+OSiRIS REU student <a href="{{ASSET_PATH}}/slides/OSiRIS-REU-Poster-MID-SURE.pdf">poster</a> presented at the <a href="https://urca.msu.edu/forums/mid-sure-2019">Mid-SURE</a> event to summarize research experience in the <a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a> program at MSU. 
 
 <a href="https://indico.cern.ch/event/765497/contributions/3351202/">Slides</a> from OSiRIS talk presented during <a href="https://www.hepix.org/">HEPiX</a> Spring 2019 at UCSD in San Diego.
 
