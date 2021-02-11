@@ -62,6 +62,12 @@ University of Michigan Advanced Research Computing is an Associate member of the
 | Carlo Musante | | | | WSU Network Engineer |
 | Michael Thompson | | | | WSU Lead Engineer |
 
+<h4>OSiRIS Undergraduate Students</h4>
+
+|Kristy Yoshimoto | | | | IU Student Engineer |
+|Kai Sandstrom | | | | IU Student Engineer |
+
+
 <h4>Former OSiRIS Students and Staff</h4>
 
 These individuals contributed to OSiRIS but are not currently involved in the project.
