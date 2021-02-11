@@ -72,8 +72,8 @@ These individuals contributed to OSiRIS but are not currently involved in the pr
 | Jayashree Candadai | | | | IU Principal Research Engineer |
 | Miao Zhang | | | | IU Grad Student Engineer |
 | Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |
-| Victoria Cao | | | | MSU REU Student (<a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a>) | 
-| William Dixon | | | | MSU REU Student (<a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a>) |
+| Victoria Cao | | | | MSU REU Student | 
+| William Dixon | | | | MSU REU Student |
 | Jeff Goeke-Smith | | | | MSU Network Engineer |
 | Benjeman Meekhof | | | | UM Lead Engineer |
 | Jerome Kinlaw | | | | UM Engineer |  
