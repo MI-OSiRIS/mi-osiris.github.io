@@ -64,8 +64,8 @@ University of Michigan Advanced Research Computing is an Associate member of the
 
 <h4>OSiRIS Undergraduate Students</h4>
 
-|Kristy Yoshimoto | | | | IU Student Engineer |
-|Kai Sandstrom | | | | IU Student Engineer |
+| Kristy Yoshimoto | | | | IU Student Engineer |
+| Kai Sandstrom | | | | IU Student Engineer |
 
 
 <h4>Former OSiRIS Students and Staff</h4>
