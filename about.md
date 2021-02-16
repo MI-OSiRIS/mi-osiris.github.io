@@ -52,38 +52,42 @@ University of Michigan Advanced Research Computing is an Associate member of the
 
 <h4>Current OSiRIS Staff</h4>
 
-| Ezra Kissel | | | | IU Lead Research Scientist |
 | Jeremy Musser | | | | IU Grad Student Engineer |
 | Alex Shroyer | | | | IU Engineer | 
-| Jeff Goeke-Smith | | | | MSU Network Engineer |
 | Andy Keen | | | | MSU Lead Engineer |
 | Nick Rahme | | | | MSU Engineer | 
-| Jerome Kinlaw | | | | UM Engineer | 
+| Adam Pitcher | | | | MSU Lead Engineer |
 | Dan Kirkland | | | | UM Network Engineer | 
-| Benjeman Meekhof | | | | UM Lead Engineer |
 | Matt Lessins | | | | WSU Network Engineer |
 | Carlo Musante | | | | WSU Network Engineer |
 | Michael Thompson | | | | WSU Lead Engineer |
 
 <h4>OSiRIS Undergraduate Students</h4>
 
-| Victoria Cao | | | | MSU REU Student (<a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a>) |
-| William Dixon | | | | MSU REU Student (<a href="https://icer-acres.msu.edu/summer-2019/student-participants">iCER ACRES</a>) |
-| Raul Dutta | | | | UM Student Engineer |
+| Kristy Yoshimoto | | | | IU Student Engineer |
+| Kai Sandstrom | | | | IU Student Engineer |
+
 
 <h4>Former OSiRIS Students and Staff</h4>
 
 These individuals contributed to OSiRIS but are not currently involved in the project.
 
+| Ezra Kissel | | | | IU Lead Research Scientist |
 | Grant Skipper | | | | IU Grad Student Engineer | 
 | Charlie Miller | | | | MSU Engineer |
 | Jayashree Candadai | | | | IU Principal Research Engineer |
 | Miao Zhang | | | | IU Grad Student Engineer |
-| Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |  
+| Xiaoxing (Adele) Han | | | | MSU OSiRIS Logo Design |
+| Victoria Cao | | | | MSU REU Student | 
+| William Dixon | | | | MSU REU Student |
+| Jeff Goeke-Smith | | | | MSU Network Engineer |
+| Benjeman Meekhof | | | | UM Lead Engineer |
+| Jerome Kinlaw | | | | UM Engineer |  
 | My Do | | | | UM Student Engineer |  
 | Lillian Huang | | | | UM Student Engineer |
 | Ryan Marshall | | | | UM Student Engineer |
-| Charlie Monk | | | | UM Student Engineer | 
+| Charlie Monk | | | | UM Student Engineer |
+| Raul Dutta | | | | UM Student Engineer | 
 | Keane Wolter | | | | UM Engineer |
 | Michael Gregorowicz | | | | WSU Systems Architect |
 
