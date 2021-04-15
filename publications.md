@@ -1,11 +1,22 @@
 ---
 layout: default
-title: Publications
+title: Citations and Publications
 tagline: OSiRIS presentations, papers, and articles
 group: navigation
 order: 2
 ---
 {% include JB/setup %}
+
+<h3>How To Cite OSiRIS ?</h3>
+If you use OSiRIS for your research and would like to include proper citation and acknowledgement to OSiRIS , we would recommend the following:
+
+<a href="https://doi.org/10.1088/1742-6596/898/6/062045"> OSiRIS: a distributed Ceph deployment using software defined networking for multi-institutional research, DOI</a>
+
+<a href="https://doi.org/10.1051/epjconf/202024504012"> OSiRIS: A Distributed Storage and Networking Project Update, DOI</a>
+
+OSiRIS Project -- This material is based upon work supported by the National Science Foundation under Grant Number <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1541335&HistoricalAwards=false">1541335</a>
+
+<h3>Publications</h3>
 
 <a href="{{ASSET_PATH}}/slides/OSiRIS-UM-CoP-slides.pdf">Slides</a> from OSiRIS: Project Update presented by  Shawn McKee at  UM Storage Community of Practice (CoP) on April 29,2020.
 
