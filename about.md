@@ -66,7 +66,8 @@ University of Michigan Advanced Research Computing is an Associate member of the
 
 | Kristy Yoshimoto | | | | IU Student Engineer |
 | Kai Sandstrom | | | | IU Student Engineer |
-
+| Jackson Riggle | | | | MSU REU Student |
+| Ryan Chang | | | | MSU REU Student |
 
 <h4>Former OSiRIS Students and Staff</h4>
 
