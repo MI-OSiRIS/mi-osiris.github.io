@@ -35,11 +35,14 @@ Alternately, if you download the <a href="https://github.com/MI-OSiRIS/osiris-bu
         <span>Create credentials file: </span> The awscli utility can be used to setup your credential file:
     </p>
 <pre>
-/bin/aws configure set aws_access_key_id ABC234
-/bin/aws configure set aws_secret_access_key Abc123
+~/bin/aws configure
 </pre>
 <p>
-    The userid, access key, and secret key are available from <a href="https://comanage.osris.org">OSiRIS COmanage</a>.  The credentials will be placed under the 'default' profile.  If you wish to have multiple profiles for different credentials use the --profile= option to point to different configuration profiles.
+    This command will prompt you for access key and secret key (see paragraph below), as well as a default region name and default output format. Input 
+    us-east-2 as the region name and leave the output format blank (press enter).
+</p>
+<p>
+    The userid, access key, and secret key are available from <a href="https://comanage.osris.org">OSiRIS COmanage</a>. After signing in to the service, navigate to the user menu in the top right of the screen and click the OSiRIS link in the dropdown that appears. The credentials will be placed under the 'default' profile.  If you wish to have multiple profiles for different credentials use the --profile= option to point to different configuration profiles.
 </p>
 
 <p>The resulting file looks like this (you can also create it manually):</p>
@@ -48,7 +51,15 @@ Alternately, if you download the <a href="https://github.com/MI-OSiRIS/osiris-bu
 [default]
 aws_access_key_id = ABC234
 aws_secret_access_key = Abc123
-</pre>  
+</pre>
+
+<p>The following file will also be generated:</p>
+<pre>
+# ~/.aws/config
+[default]
+region = us-east-1
+</pre>
+    
 <span class='light-em'>Note: </span> If you used the OSiRIS setup utility (osiris-setup.dist) to configure a credentials file then the profile will be your S3 username, not 'default'.  You will have to specify this in the --profile= option.  
 </li>
 <li>
@@ -63,3 +74,22 @@ aws_secret_access_key = Abc123
 ~/bin/aws s3 --endpoint-url https://rgw.osris.org mb s3://yourcou-bucketname"
 </pre>
 </li>
+<li>
+    <p>
+        <span>Alias shorthand:</span>
+        In order to avoid typing prefixing each aws command with ~/bin/aws s3 --endpoint-url https://rgw.osris.org, consider creating an alias for that purpose
+    </p>
+<pre>
+alias awscmd='~/bin/aws s3 --endpoint-url https://rgw.osris.org'
+</pre>
+    <p>
+        Then, you can reference aws commands with just awscmd. For example, in order to create a bucket with the alias, type in the following.
+    </p>
+<pre>
+awscmd mb s3://yourcou-bucketname"
+</pre>
+    <p>
+        Make sure to add the alias command to .bashrc (or a similar file depending on your shell).
+    </p>
+</li>
+</ol>
