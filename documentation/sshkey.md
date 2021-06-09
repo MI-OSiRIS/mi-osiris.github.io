@@ -39,9 +39,17 @@ After your OSiRIS enrollment has been approved login to <a href="https://comanag
 
 <img style="width: 50%" src="{{IMAGE_PATH}}/documentation/Comanage-person-menu.png" alt="COmanage Identity Menu"/>
 
-Scroll down.  You will see a section for 'ssh keys'.  Click on Add.   You can add multiple keys by repeating this process.
+Select Authenticators from the sidebar menu.
 
-<img style="width: 80%" src="{{IMAGE_PATH}}/documentation/sshkey/Comanage-ssh-add.png" alt="COmanage SSH key add button"/>
+<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/sshkey/Authenticators.png" alt="Authenticators"/>
+
+Click on Manage under the Actions section of the SSH Key Authenticator.
+
+<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/sshkey/ssh-key-manage.png" alt="COmanage SSH key manage button"/>
+
+Click on Add SSH Key in the following page. You can add multiple keys by repeating this process.
+
+<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/sshkey/Comanage-ssh-add-key.png" alt="COmanage SSH key add button"/>     
 
 On the following screen you can specify an ssh keyfile to upload.  This will be the id_rsa.pub file created in the example.  You will  have to copy this file to your computer if it was created on another machine.  Be sure to only copy and upload the .pub file - the other id_rsa or id_dsa file should remain private.  
 
