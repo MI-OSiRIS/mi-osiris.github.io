@@ -82,7 +82,6 @@ For RADOS access:  Every user needing to access RADOS services will need to enro
 If you do not belong to an institution/group which is part of the <a href="https://www.incommon.org/">InCommon Federation</a> you can still authenticate to OSiRIS using one of the 'public' identity providers below.  After establishing an account at one of these providers use that provider to login to OSiRIS Comanage.
 
 <ul>
-    <li><a href="https://go.ncsa.illinois.edu/idp-guest">National Center for Supercomputing Applications</a> </li>
     <li><a href="https://app.unitedid.org/signup/">UnitedID</a></li>
 </ul>
 
