@@ -28,10 +28,9 @@ author :
   #twitter : username
   #feedburner : feedname
 
+# Universal Analytics (UA-82460679-1) was shut down by Google in 2024; no
+# provider means _includes/JB/analytics emits nothing.
 analytics :
-    provider : google
-    google : 
-        tracking_id : 'UA-82460679-1'
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
