@@ -27,7 +27,7 @@ How to upload your ssh key so you can use OSiRIS ssh/scp/sftp gateways
 
 <p>
     <a href="globus.html">Using Globus with OSiRIS:</a>
-    How to get setup to use Globus with OSiRIS CephFS or S3 storage.
+    How to get setup to use Globus with OSiRIS CephFS storage.
 </p>
 
 <p>

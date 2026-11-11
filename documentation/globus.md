@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Globus
-tagline : Using Globus with OSiRIS CephFS or S3
+tagline : Using Globus with OSiRIS CephFS
 group: documentation
 subnavgroup: documentation
 ---
 {% include JB/setup %}
 
-OSiRIS CephFS and S3 storage is accessible using our Globus endpoints.  
+OSiRIS CephFS storage is accessible using our Globus endpoints.  
 
 <strong>The Globus CephFS endpoints are:</strong>
 
@@ -16,14 +16,6 @@ osiris@wsu <br />
 osiris@msu <br />
 
 All have an identical view of the OSiRIS data on CephFS as you also can see via <a href="sshkey.html">ssh/scp</a> access
-
-<strong>The Globus OSiRIS S3 endpoints are:</strong>
-
-osiris-s3rgw@um <br />
-osiris-s3rgw@msu <br />
-osiris-s3rgw@wsu <br />
-
-You will be able to access data buckets associated with the S3 userid mapped to your CILogon identity.  By default every person has an S3 identity which is the same as the username which identifies you for CephFS and ssh login.  
 
 If you are planning to access OSiRIS via Globus then you will need to go to <a href="https://cilogon.org/">cilogon.org</a> and login with any identity provider.  It does not have to be the same provider used for OSiRIS (but most likely is).  
 
@@ -44,9 +36,7 @@ Ignore any endpoints with '#' in the name. They are left for the convenience of 
 
 When you access Globus CephFS endpoints your access is determined by Posix (unix-style) permissions for CephFS.  Please look at information about <a href="groups.html">OSiRIS default groups</a> for more details and how to create additional groups for other OSiRIS-enrolled collaborators.  
 
-When you access Globus S3 endpoints your access is determined by S3 ACL.  By default you have full access to any buckets you create.  Allowing others to access them will require setting an ACL.  Some examples are <a href="/documentation/s3.html">included in our S3 documentation</a>
-
-Globus also offers Globus Share functionality where you create a share belonging to your identity and choose to share it with other Globus identities or groups.  This is entirely self-managed outside the scope of OSiRIS.  Your Globus share has the same effective permissions in OSiRIS as your identity.  This is a good option for sharing data with Globus-only users since they do not have to enroll in OSiRIS.  It also can very much simplify sharing S3-based data because you do not have to setup ACLs to enable access to your data buckets.
+Globus also offers Globus Share functionality where you create a share belonging to your identity and choose to share it with other Globus identities or groups.  This is entirely self-managed outside the scope of OSiRIS.  Your Globus share has the same effective permissions in OSiRIS as your identity.  This is a good option for sharing data with Globus-only users since they do not have to enroll in OSiRIS.
 
 Please be aware that Globus Shares are specific to the endpoint you create them on.  You can create a share on all of our endpoints separately.  In this case it is recommended to create a Globus group to manage sharing permissions; you can then use the same group for each share.  
 
