@@ -16,7 +16,7 @@ OSiRIS is built on open source technology.  The components we used or built are 
 
 [Ceph](http://www.ceph.com) is a distributed object store and file system designed to provide excellent performance, reliability and scalability.  
 
-The OSiRIS Ceph deployment spans WSU, MSU, and UM.  We currently have deployed approximately 970 OSD.  Our OSD are 8TB or 10TB disks for a total of about 8PB raw storage.
+The OSiRIS Ceph deployment spans WSU, MSU, and UM. In November 2026 it has about 1,230 OSDs on 8 TB and 10 TB disks, for about 11 PiB of raw storage, and runs Ceph Tentacle (20.2.4) deployed with cephadm. Data is kept in three copies, one at each site.
 
 For information on how we tune and configure Ceph:  <a href="/components/ceph">Ceph configuration</a>
 
@@ -28,7 +28,7 @@ The Ceph CRUSH map also allows for choosing which OSD will be used as the primar
 
 <h4>COmanage</h4>
 
-OSiRIS identity management and provisioning is handled by <a href="https://www.internet2.edu/products-services/trust-identity/comanage/">Internet2 COmanage</a>.  Plugins to provision user information from COmanage to LDAP and to Grouper are part of the COmanage release.  For Ceph we created a new plugin.  Each plugin is developed on a git branch and merged into a master branch that reflects our current in-use version of COmanage.  We tend to track the <a href="https://github.com/Internet2/comanage-registry/tree/develop">master</a> branch of COmanage.  
+OSiRIS identity management and provisioning is handled by <a href="https://www.internet2.edu/products-services/trust-identity/comanage/">Internet2 COmanage</a>.  Plugins to provision user information from COmanage to LDAP are part of the COmanage release. For Ceph we created a new plugin, and in 2026 we wrote another, LdapCoGroupProvisioner, which provisions COmanage's groups to LDAP in place of Grouper.  Each plugin is developed on a git branch and merged into a master branch that reflects our current in-use version of COmanage.  We run COmanage Registry 4.6.1 with our plugins added.  
 
 More information and usage instructions for the COManage Ceph Provisioner plugin are available in <a href="cephprovisioner.html">our documentation</a>.  
 
@@ -37,6 +37,9 @@ More information and usage instructions for the COManage Ceph Provisioner plugin
 Stable code from of all of these plugins is combined on the <a href="https://github.com/MI-OSiRIS/comanage-registry/tree/osiris_master">osiris_master</a> Git branch within our fork of the <a href="https://github.com/Internet2/comanage-registry">Internet2 COmanage repository</a>.  Other miscellanous changes to COmanage are also included on this branch but they are non-essential for recreating our functionality.   From time to time we have made PR to the upstream repo with small changes that are applicable to general use, and may at some point make an effort to include our other plugins in the upstream release if there is interest.  
 
 <h3>Monitoring</h3>
+
+Today (2026) OSiRIS uses Prometheus and Grafana for metrics and alerts (including Ceph's own exporters and dashboards), CheckMK for host and service checks, and an OpenSearch cluster for logs; see <a href="/components/monitoring.html">monitoring</a>. The rest of this section describes the setup we built in 2016-2020.
+
 
 For many system metrics we use <a href="https://collectd.org/">Collectd</a>.  Typical metrics include CPU, disk, network (including OVS stats), and also metrics specific to some of our services such as HAproxy and Ceph processes details.  To configure collectd we use a <a href="https://forge.puppet.com/puppet/collectd">puppet-collectd</a> module.  
 
@@ -59,11 +62,11 @@ We use Puppet to manage setup and configuration.  The following puppet modules w
 
 <a href="/components/management.html">More information on Puppet and other management tools we use</a>
 
-<a class="ptitle" href="https://github.com/MI-OSiRIS/puppet-ceph">puppet-ceph:</a> OSiRIS storage is provided by Ceph.  This puppet module is used to deploy and manage all ceph components.  It was recently updated to deploy Bluestore OSD.  Our version is forked from <a href="https://github.com/openstack/puppet-ceph">openstack/puppet-ceph</a>
+<a class="ptitle" href="https://github.com/MI-OSiRIS/puppet-ceph">puppet-ceph:</a> OSiRIS storage is provided by Ceph.  This puppet module was used to deploy and manage all ceph components until we moved the cluster to cephadm.  It was recently updated to deploy Bluestore OSD.  Our version is forked from <a href="https://github.com/openstack/puppet-ceph">openstack/puppet-ceph</a>
 
 <a class="ptitle" href="https://github.com/MI-OSiRIS/puppet-ds389">puppet-ds389:</a>  OSiRIS backend directory services are provided by 389 Directory server in a multi-master replicated configuration.  This module is used to deploy/manage that configuration and additional schema required for OSiRIS.  
 
-<a class="ptitle" href="https://github.com/MI-OSiRIS/puppet-grouper">puppet-grouper:</a> OSiRIS Posix groups are managed and provisioned to LDAP by <a href="https://www.internet2.edu/products-services/trust-identity/grouper/">Internet2 Grouper</a>.  Grouper could also be extended with additional provisioning targets to manage non-LDAP groups or to translate group memberships to other models such as S3 bucket ACL users but we haven't explored this.  This puppet module manages Grouper config as used by OSiRIS but requires some pre-setup of Grouper.  
+<a class="ptitle" href="https://github.com/MI-OSiRIS/puppet-grouper">puppet-grouper:</a> (Retired in November 2026, when COmanage took over group provisioning.) OSiRIS Posix groups were managed and provisioned to LDAP by <a href="https://www.internet2.edu/products-services/trust-identity/grouper/">Internet2 Grouper</a>.  Grouper could also be extended with additional provisioning targets to manage non-LDAP groups or to translate group memberships to other models such as S3 bucket ACL users but we haven't explored this.  This puppet module manages Grouper config as used by OSiRIS but requires some pre-setup of Grouper.  
 
 <a class="ptitle" href="https://github.com/MI-OSiRIS/puppet-shibboleth">puppet-shibboleth:</a>  Our web services are authenticated by Shibboleth using InCommon meta-data.  We use this puppet module to manage the configuration.  It is forked from <a href="https://github.com/Aethylred/puppet-shibboleth">Aethylred/puppet-shibboleth</a>.
 

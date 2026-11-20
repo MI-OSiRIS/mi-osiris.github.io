@@ -9,6 +9,17 @@ subnavgroup: components
 
 We use several tools to gain insight into performance at each level of our infrastructure.
 
+#### Current setup (2026)
+
+- **Prometheus and Grafana**: node, Ceph, Slurm, IPMI and Dell hardware exporters feed Prometheus servers at each site. Grafana dashboards show the data, and Alertmanager sends alerts. Ceph's own Prometheus, Alertmanager and Grafana, deployed by cephadm, run on the Ceph manager hosts.
+- **CheckMK**: host and service checks, one instance per site.
+- **OpenSearch**: logs from all hosts go to an OpenSearch cluster with nodes at all three sites.
+- **perfSONAR**: network throughput and latency tests between the sites.
+
+The rest of this page describes the setup we built in 2016-2020, which has been replaced.
+
+#### Earlier setup (2016-2020)
+
 For many system metrics we use <a href="https://collectd.org/">Collectd</a>.  Typical metrics include CPU, disk, network (including OVS stats), and also metrics specific to some of our services such as HAproxy and Ceph processes details.  To configure collectd we use a <a href="https://forge.puppet.com/puppet/collectd">puppet-collectd</a> module.  
 
 Ceph Metrics are gathered by a plugin to ceph-mgr originally written by a U-M student while working for our project.  The plugin was contributed back to Ceph where it has seen significant modification since then.  Some details about the plugin are covered in <a href="{% post_url 2017-12-7-the-influxdb-ceph-mgr-plugin %}">our article</a> and you can also find out more information from the <a href="http://docs.ceph.com/docs/master/mgr/influx/">Ceph documentation.
