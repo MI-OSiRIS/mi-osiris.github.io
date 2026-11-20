@@ -22,7 +22,7 @@ The plugin handles the following
 </li>
 
 <li>
-    <strong>CephFS</strong> - COmanage provisions LDAP posixUser information used by systems which mount CephFS, and it provisions default COU groups to Grouper where they they are provisioned to LDAP along with any user-created groups.  This plugin creates a ceph client key with appropriate access capabilities to access the COU directory path and COU data pool dedicated to CephFS.  We use an external script to create a directory for each COU and set the <a href="http://docs.ceph.com/docs/master/cephfs/file-layouts/">file layout</a> for the directory to be the COU CephFS data pool.  The key created by this plugin also includes capabilities to access COU data pools for rados and rbd. 
+    <strong>CephFS</strong> - COmanage provisions LDAP posixUser information used by systems which mount CephFS, and COmanage provisions the default COU groups and any user-created groups to LDAP (through Grouper until November 2026; since then through our LdapCoGroupProvisioner plugin).  This plugin creates a ceph client key with appropriate access capabilities to access the COU directory path and COU data pool dedicated to CephFS.  We use an external script to create a directory for each COU and set the <a href="http://docs.ceph.com/docs/master/cephfs/file-layouts/">file layout</a> for the directory to be the COU CephFS data pool.  The key created by this plugin also includes capabilities to access COU data pools for rados and rbd. 
 </li>
 </ul>
 
@@ -81,7 +81,7 @@ Many settings are available but may be obsolete or not yet implemented.  Here is
     <li>RGW Access Key:  Marked as required but not used.  Any string will do.</li>
     <li>Create COU Data Pools: If set then COmanage will use the 'ceph' command to create data pools for new COU.  They will follow a pattern like 'cou.CouName.fs' and 4 pools will be created:  .fs, .rgw, .rados, .rbd.  </li>
     <li>COU Data Pool PG count:  Number of placement groups to specify for new COU data pools.  Set this low enough that your expected number of COU will not end up putting too many PG on your cluster.  You can always increase PG count later outside of COmanage</li>
-    <li>LDAP Lookup Target / Grouper Lookup Target:  Obsolete feature, ignored.  It used to be possible to create client keys with uid/gid restrictions but we no longer support creating user keys with direct CephFS mount access in the plugin.  Grouper or LDAP would be used to discover the posix uid/gid. </li>
+    <li>LDAP Lookup Target / Grouper Lookup Target:  Obsolete feature, ignored.  It used to be possible to create client keys with uid/gid restrictions but we no longer support creating user keys with direct CephFS mount access in the plugin.  LDAP (or Grouper, before it was retired in 2026) would be used to discover the posix uid/gid. </li>
     <li>Use RGW LDAP Auth:  Obsolete feature, ignored:  At one time we provisioned RGW users into LDAP.  This is no longer true.  The feature was of little benefit since it is still necessary to create a RGW user to hold metadata, and the LDAP token format used for client credentials was confusing since it is unique to Ceph RGW</li>
     <li>Ceph User Prefix:  When creating ceph client keys they will be prefixed with this string.  The default is 'comanage' so new Ceph client keys are created as 'client.comanage.uid'</li>
     <li>Create COU data directory:  If enabled then COmanage will attempt to run an external script that creates a directory for new COU and sets attributes to place it on the 'cou.Name.fs' pool. </li>

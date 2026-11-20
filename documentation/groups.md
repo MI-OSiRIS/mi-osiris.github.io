@@ -60,42 +60,30 @@ Whether you access your CephFS directory via Globus, scp, or NFS these permissio
 
 <h2>Managing groups</h2>
 
-OSiRIS uses a tool called Grouper to manage groups.  You can access grouper at <a href="https://comanage.osris.org/grouper">https://comanage.osris.org/grouper</a> or via this link in the main COmanage interface:
+Groups are managed in COmanage, at <a href="https://comanage.osris.org">https://comanage.osris.org</a>. (Until November 2026 they were managed in a separate tool, Grouper, which has been retired.)
 
-<img style="width: 70%" src="{{IMAGE_PATH}}/documentation/groups/Comanage-grouper-link.png" alt="COmanage Grouper Link example"/>
+- Log in to COmanage with your institution's account and choose **Groups** in the menu. You see the groups you belong to, including the default groups described above. In COmanage their names use colons, for example <code>CO:COU:YourCouName:members:active</code>; on OSiRIS systems the colons become underscores (<code>CO_COU_YourCouName_members_active</code>). COmanage keeps the default groups up to date, so don't edit them.
+- To create a group, choose **Add Group**, give it a short name and a description, and save. The name becomes the Unix group name, so use only letters, digits, <code>-</code> and <code>_</code>, with no spaces.
+- Open the group and add members. These are usually people in your own COU, but anyone enrolled in OSiRIS can be added.
+- COmanage passes the change to the OSiRIS directory right away, and OSiRIS systems see it within about a minute. Log in again to see a new group in a shell.
 
-In the 'tree' at left you will see the default groups noted above. Do not attempt to edit these groups.
+If you can't create a group or add someone, ask your COU admin or write to <a href="mailto:osiris-help@umich.edu">osiris-help@umich.edu</a>.
 
-<br />
-If you are a COU admin you can create new groups:
-
-<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/groups/Grouper-newgroup.png" alt="Create new group link"/>
-
-<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/groups/Grouper-newgroup-create.png" alt="New Group Fields"/>
-
-After creating a group you need to click the 'refresh' icon so it shows up in the group tree:
-<img style="width: 50%" src="{{IMAGE_PATH}}/documentation/groups/Grouper-refresh.png" alt="Refresh symbol"/>
-
-You can then add other OSiRIS members to your group.  This generally would be people who are also enrolled in the same OSiRIS COU but you do have the option to add people in OSiRIS from outside your virtual organization or other CO_COU groups representing other virtual organizations.  Just start typing and suggested matches will show up in a dropdown list.  
-<img style="width: 100%" src="{{IMAGE_PATH}}/documentation/groups/Grouper-mynewgroup.png" alt="Create a new group and add member"/>
-
-Once you have created a group in Grouper you can use it in shell commands.  For example, you could create a folder and make 'mynewgroup' the owner so that anyone you put in 'mynewgroup' could write in that folder.
+Once the group exists you can use it in shell commands. For example, you could create a folder and make 'mynewgroup' the owner so that anyone you put in 'mynewgroup' can write in that folder.
 <pre>
     cd /osiris/testcou
-    mkdir newfolder
+    mkdir myfolder
     chgrp mynewgroup myfolder
     chmod g+rwx myfolder
 
     ls -l
-  
+
     drwxrws--- 1 user mynewgroup 0 Mar 26 15:50 myfolder
 </pre>
 
-Inside a shell use the unix 'id' command to see what groups you are in.  They will match what you see in the Grouper GUI.
+Inside a shell use the unix 'id' command to see what groups you are in. They match your groups in COmanage, with underscores in place of colons.
 <pre>
 [user@um-xfer01 testcou]$ id
 
-uid=99999(user) gid=99999(user) groups=99999(user),123456(CO_COU_TestCOU_admins),1234567(CO_COU_TestCOU_members_active),12345678(CO_COU_TestCOU_members_all) 
+uid=99999(user) gid=99999(user) groups=99999(user),123456(CO_COU_TestCOU_admins),1234567(CO_COU_TestCOU_members_active),12345678(CO_COU_TestCOU_members_all)
 </pre>
-
-Grouper is an open source project managed by Internet2.  More information:  <a href="https://www.internet2.edu/products-services/trust-identity/grouper">https://www.internet2.edu/products-services/trust-identity/grouper</a>

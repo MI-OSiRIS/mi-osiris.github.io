@@ -38,7 +38,7 @@ How to upload your ssh key so you can use OSiRIS ssh/scp/sftp gateways
 <p>
     <a href="groups.html">Managing OSiRIS Groups:</a>
 
-    How to create new posix groups and manage memberships with the Grouper web interface.
+    How to create new posix groups and manage memberships in COmanage.
 </p>
 
 <p>
