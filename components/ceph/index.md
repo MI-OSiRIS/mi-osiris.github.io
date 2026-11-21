@@ -7,6 +7,8 @@ group: components
 ---
 {% include JB/setup %}
 
+<p><em>Note, November 2026:</em> this page describes our setup around 2019 (Ceph Mimic, deployed with Puppet). The cluster now runs Ceph Tentacle (20.2.4) and is deployed and upgraded with cephadm. Some settings below no longer apply.</p>
+
 <h3>Ceph Deployment</h3>
 
 <img style="float: left; margin-right: 10px" src="{{IMAGE_PATH}}/logos/puppet_logo.png">

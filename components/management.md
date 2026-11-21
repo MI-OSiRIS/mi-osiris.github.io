@@ -8,6 +8,9 @@ subnavgroup: components
 {% include JB/setup %}
 
 <h1>Foreman</h1>
+
+<p><em>Update, November 2026:</em> the approach below is still how OSiRIS is run. Foreman 5.1 builds every host, all hosts run AlmaLinux 9, the Puppet code is deployed with r10k from Git, and the agents are moving from Puppet 7 to OpenVox 8, the community continuation of Puppet. Ceph itself is now deployed and upgraded with cephadm rather than Puppet, and most metrics go to Prometheus instead of Collectd and InfluxDB.</p>
+
 OSiRIS uses Foreman for VM and hardware provisioning.  Foreman is structured to use small 'smart proxies' to provide DHCP, TFTP, and kickstart services to hosts in any given location controlled by a central management host.  This structure allows us to deploy hosts at any OSiRIS site from one interface.  It also allows us to bootstrap a new site simply by providing a small VM image pre-configured with appropriate smart-proxies and registering it to our Foreman instance.  We can also generate bootable media to start sites from scratch - for example to deploy a new virtualization host that can then host the Foreman proxy VM.  It is also used for for small sites not requiring the entire infrastructure, such as a site wishing only to deploy a local storage block.  
 
 Foreman also has a variety of plugins to create different types of Virtual Machines which are then PXE booted and have an OS installed.  In our case we use the libvirt plugin to deploy kvm/libvirt VMs.  For non-virtual machines we define them in Foreman using the MAC address of an onboard network interface to PXE and build through.  More complex Openvswitch configurations are then put in place with a script we run post-install.  
